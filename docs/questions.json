@@ -1,68 +1,90 @@
 {
   "lesen": {
     "teil1": [
-      {"id": "L1_001", "passage": "PERSONEN:\n1. Laura möchte während des Studiums Berufserfahrung sammeln.\n2. Igor hat Familie und möchte im europäischen Ausland arbeiten.\n3. Jens interessiert sich für das Thema Umweltschutz in Unternehmen.\n\nARTIKEL:\na) Erfolgreich neue Wege gehen\ne) Der richtige Praktikumsplatz\nh) Neue Broschüre", "text": "Welcher Artikel passt zu Laura?", "options": ["a)", "e)", "h)"], "answer": "e)", "explanation": "Artikel e spricht speziell von Praktikumsmöglichkeiten für Studenten.", "time": 45}
+      {
+        "id": "L1_001",
+        "passage": "NEUE SICHERHEITSMASSNAHMEN\n\nMitte März wird im gesamten Unternehmen eine neue Schließanlage installiert. Der Zugang zu den Laboren funktioniert demnächst nur noch mittels eines Zahlencodes.",
+        "questions": [
+          {
+            "number": 1,
+            "question": "Welche neue Sicherheitsmaßnahme wird eingeführt?",
+            "options": ["Fingerabdruck-Scanner", "Elektronische Zahlencodes für Laborzugang", "Alle Türen werden verriegelt"],
+            "answer": "Elektronische Zahlencodes für Laborzugang"
+          }
+        ]
+      }
     ],
     "teil2": [
-      {"id": "L2_001", "passage": "BETRIEBSSPORT\nDie Gesundheit unserer Mitarbeiter liegt uns sehr am Herzen. Das Sportprogramm ist kostenlos.\nNeu und noch nicht im Programmheft enthalten ist der Kurs 'Yoga in der Mittagspause', der ab 15. Mai montags und mittwochs von 12:30 bis 13:15 Uhr stattfindet.", "text": "Im Programmheft erfährt man, wo der Kurs 'Yoga in der Mittagspause' stattfindet. Ist das richtig oder falsch?", "options": ["Richtig", "Falsch"], "answer": "Falsch", "explanation": "Der Text sagt: 'Neu und noch NICHT im Programmheft enthalten ist der Kurs Yoga'.", "time": 45}
+      {
+        "id": "L2_001",
+        "passage": "BETRIEBSSPORTMÖGLICHKEITEN\n\nTeilnahme am kostenlosen Betriebssportprogramm. In den Mannschaftssportarten Tischtennis und Fußball besteht die Möglichkeit, neben dem Training auch an Turnieren mit anderen Firmen-Teams teilzunehmen.",
+        "questions": [
+          {
+            "number": 1,
+            "question": "Was können die Mitarbeiter tun?",
+            "options": ["Sie dürfen nur nach der Arbeit trainieren", "Sie können an Wettkämpfen teilnehmen", "Sie müssen alle Kurse selbst bezahlen"],
+            "answer": "Sie können an Wettkämpfen teilnehmen"
+          }
+        ]
+      }
     ],
     "teil3": [
-      {"id": "L3_001", "passage": "ARBEITSZEIT\nDie wöchentliche Arbeitszeit bei einer Vollzeitstelle beträgt 38,5 Stunden.\nBei einer Arbeitszeit von über sechs Stunden muss spätestens nach vier Stunden eine 30-minütige Pause eingelegt werden.", "text": "Wie viele Stunden pro Woche muss man bei einer Vollzeitstelle arbeiten?", "options": ["35 Stunden", "38,5 Stunden", "40 Stunden"], "answer": "38,5 Stunden", "explanation": "Der Text sagt klar: 'Die wöchentliche Arbeitszeit bei einer Vollzeitstelle beträgt 38,5 Stunden.'", "time": 45}
+      {
+        "id": "L3_001",
+        "passage": "PERSONEN:\n1. Laura möchte während des Studiums Berufserfahrung sammeln.\n2. Igor hat Familie und möchte im europäischen Ausland arbeiten.\n3. Jens interessiert sich für das Thema Umweltschutz in Unternehmen.\n\nARTIKEL:\na) Erfolgreich neue Wege gehen\nb) Der richtige Praktikumsplatz\nc) Arbeiten in Europa\nd) Umweltfreundliche Unternehmen\ne) Neue Broschüre",
+        "questions": [
+          {
+            "number": 1,
+            "question": "Welcher Artikel passt zu Laura?",
+            "options": ["a", "b", "c", "d", "e"],
+            "answer": "b"
+          },
+          {
+            "number": 2,
+            "question": "Welcher Artikel passt zu Igor?",
+            "options": ["a", "b", "c", "d", "e"],
+            "answer": "c"
+          }
+        ]
+      }
     ],
     "teil4": [
-      {"id": "L4_001", "passage": "PAUSEN\nBei einer Arbeitszeit von über sechs Stunden muss spätestens nach vier Stunden eine 30-minütige Pause eingelegt werden.", "text": "Wann muss eine Pause gemacht werden?", "options": ["Nach 2 Stunden", "Nach 4 Stunden", "Nach 5 Stunden"], "answer": "Nach 4 Stunden", "explanation": "Der Text sagt: 'spätestens nach VIER Stunden eine 30-minütige Pause'.", "time": 45}
+      {
+        "id": "L4_001",
+        "passage": "ZEITKARTE\n\nDie Zeitkarte ist Ihr Zahlungsmittel in der Kantine und auch Ihre Zugangskarte zu den Labors und Umkleideräumen.",
+        "questions": [
+          {
+            "number": 1,
+            "question": "Richtig oder Falsch: Die Zeitkarte hat nur eine Funktion",
+            "options": ["Richtig", "Falsch"],
+            "answer": "Falsch"
+          }
+        ]
+      }
     ]
   },
   "lesen_und_schreiben": {
-    "teil1": [
-      {"id": "LS1_001", "passage": "Liebe Anna,\nvielen Dank für deine E-Mail! Es freut mich, dass du mich besuchen möchtest. Leider bin ich in den nächsten Wochen sehr beschäftigt mit meinem neuen Job.", "text": "Ergänzen Sie: Der Sender ist _____ mit seinem neuen Job.", "options": ["zufrieden", "beschäftigt", "unglücklich"], "answer": "beschäftigt", "explanation": "Im Text steht: 'Leider bin ich in den nächsten Wochen sehr beschäftigt mit meinem neuen Job.'", "time": 60}
-    ],
-    "teil2": [
-      {"id": "LS2_001", "passage": "Schreiben Sie eine E-Mail (80-100 Wörter):\nIhr Freund/Ihre Freundin hat Sie zu einer Party eingeladen. Sie können leider nicht kommen. Schreiben Sie, warum nicht und machen Sie einen anderen Termin vor.", "text": "E-Mail schreiben", "options": [], "answer": "Individuelle Antwort", "explanation": "Dies ist eine Schreibaufgabe. Die Antwort wird individuell bewertet.", "time": 60}
-    ]
+    "teil1": [{"id": "LS1_001", "passage": "Ergänzen Sie die Wörter", "answer": "Individuelle Antwort"}],
+    "teil2": [{"id": "LS2_001", "task": "Schreiben Sie eine E-Mail", "answer": "Individuelle Antwort"}]
   },
   "horen": {
-    "teil1": [
-      {"id": "H1_001", "text": "Sie hören einen kurzen Dialog. Wählen Sie die richtige Antwort.", "question": "Was ist das Thema?", "options": ["Ein Geschäftstreffen", "Ein privates Gespräch", "Eine Reservierung"], "answer": "Ein Geschäftstreffen", "explanation": "Im Dialog werden geschäftliche Themen besprochen.", "time": 30}
-    ],
-    "teil2": [
-      {"id": "H2_001", "text": "Sie hören ein längeres Gespräch. Beantworten Sie die Fragen.", "question": "Wer ist die Person?", "options": ["Ein Kunde", "Ein Angestellter", "Ein Chef"], "answer": "Ein Kunde", "explanation": "Die Person bestellt etwas und stellt Fragen wie ein Kunde.", "time": 30}
-    ],
-    "teil3": [
-      {"id": "H3_001", "text": "Sie hören ein Telefongespräch. Ergänzen Sie die Informationen.", "question": "Was möchte die Person?", "options": ["Einen Termin machen", "Ein Buch kaufen", "Eine Reservierung stornieren"], "answer": "Einen Termin machen", "explanation": "Im Gespräch wird ein Termin vereinbart.", "time": 30}
-    ],
-    "teil4": [
-      {"id": "H4_001", "text": "Sie hören einen Radiobericht. Wählen Sie die richtige Antwort.", "question": "Um welches Thema geht es?", "options": ["Umweltschutz", "Sportereignis", "Kulturveranstaltung"], "answer": "Umweltschutz", "explanation": "Der Bericht behandelt Umweltthemen.", "time": 30}
-    ]
+    "teil1": [{"id": "H1_001", "text": "Dialog Verständnis", "answer": "Individuelle Antwort"}],
+    "teil2": [{"id": "H2_001", "text": "Längeres Gespräch", "answer": "Individuelle Antwort"}],
+    "teil3": [{"id": "H3_001", "text": "Telefongespräch", "answer": "Individuelle Antwort"}],
+    "teil4": [{"id": "H4_001", "text": "Radiobericht", "answer": "Individuelle Antwort"}]
   },
   "horen_und_schreiben": {
-    "teil1": [
-      {"id": "HS1_001", "text": "Sie hören eine Durchsage. Ergänzen Sie die fehlenden Informationen.", "question": "Wann fährt der Zug ab?", "options": ["14:30 Uhr", "15:30 Uhr", "16:30 Uhr"], "answer": "15:30 Uhr", "explanation": "In der Durchsage wird die Abfahrtszeit angekündigt.", "time": 30}
-    ],
-    "teil2": [
-      {"id": "HS2_001", "text": "Sie hören eine Ansage. Notieren Sie die wichtigen Informationen.", "question": "Wo findet das Treffen statt?", "options": ["Im Büro", "Im Restaurant", "Im Hotel"], "answer": "Im Hotel", "explanation": "In der Ansage wird der Ort des Treffens genannt.", "time": 30}
-    ]
+    "teil1": [{"id": "HS1_001", "text": "Durchsage", "answer": "Individuelle Antwort"}],
+    "teil2": [{"id": "HS2_001", "text": "Ansage", "answer": "Individuelle Antwort"}]
   },
   "sprachbausteine": {
-    "teil1": [
-      {"id": "SB1_001", "passage": "Hallo Maria!\nIch _____ (1) dir schreiben, weil ich eine wichtige Nachricht habe. Nächste Woche _____ (2) ich eine neue Stelle anfangen.", "text": "Ergänzen Sie die Lücke (1):", "options": ["möchte", "muß", "kann"], "answer": "möchte", "explanation": "Das Verb 'möchte' passt grammatikalisch und semantisch.", "time": 15}
-    ],
-    "teil2": [
-      {"id": "SB2_001", "passage": "Der Kunde _____ (4) sich über den Service beschwert. Die Mitarbeiterin _____ (5) eine Lösung _____ (6). Am Ende _____ (7) der Kunde zufrieden.", "text": "Ergänzen Sie die Lücke (4):", "options": ["hatte", "hat", "ist"], "answer": "hat", "explanation": "Das Perfekt mit 'hat' ist hier korrekt.", "time": 15}
-    ],
-    "meinung": [
-      {"id": "SBM_001", "passage": "Thema: 'Homeoffice ist besser als Arbeit im Büro'\nSchreiben Sie Ihre Meinung dazu (60-80 Wörter).\nArgumentieren Sie mit mindestens zwei Beispielen.", "text": "Ihre Meinung zum Thema Homeoffice", "options": [], "answer": "Individuelle Antwort", "explanation": "Dies ist eine Meinungsaufgabe. Die Antwort wird bewertet nach: Argumentation, Grammatik und Wortschatz.", "time": 15}
-    ]
+    "teil1": [{"id": "SB1_001", "text": "Grammatik Teil 1", "answer": "Individuelle Antwort"}],
+    "teil2": [{"id": "SB2_001", "text": "Grammatik Teil 2", "answer": "Individuelle Antwort"}],
+    "meinung": [{"id": "SBM_001", "text": "Schreiben Sie Ihre Meinung", "answer": "Individuelle Antwort"}]
   },
   "mundlich": {
-    "teil1": [
-      {"id": "M1_001", "topic": "Selbstvorstellung", "question": "Stellen Sie sich vor! Sagen Sie:\n- Ihren Namen\n- Wo Sie herkommen\n- Was Sie beruflich machen", "time": 2}
-    ],
-    "teil2": [
-      {"id": "M2_001", "topic": "Gespräch über ein Thema", "question": "Sprechen Sie über folgendes Thema:\n'Welchen Beruf möchten Sie später haben und warum?'", "time": 2}
-    ],
-    "teil3": [
-      {"id": "M3_001", "topic": "Dialog mit dem Prüfer", "question": "Der Prüfer stellt Ihnen Fragen.\nAntworten Sie mündlich auf die Fragen.", "time": 2}
-    ]
+    "teil1": [{"id": "M1_001", "topic": "Selbstvorstellung", "question": "Stellen Sie sich vor", "time": 2}],
+    "teil2": [{"id": "M2_001", "topic": "Thema besprechen", "question": "Sprechen Sie über ein Thema", "time": 2}],
+    "teil3": [{"id": "M3_001", "topic": "Dialog", "question": "Antworten Sie auf Fragen", "time": 2}]
   }
 }
