@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELC B2 Mock Exam Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            padding-top: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 0.95em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background-color: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #5568d3;
+        }
+
+        .btn-secondary {
+            background-color: #f0f0f0;
+            color: #333;
+            border: 2px solid #667eea;
+        }
+
+        .btn-secondary:hover {
+            background-color: #e8e8e8;
+        }
+
+        .stats {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .stats h3 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            color: #667eea;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .instructions {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .instructions h3 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+
+        .instructions ol {
+            margin-left: 20px;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .instructions li {
+            margin-bottom: 15px;
+        }
+
+        .code-block {
+            background: #f5f5f5;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            opacity: 0.9;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin: 15px 0;
+        }
+
+        .feature-list li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #666;
+        }
+
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 TELC B2 Mock Exam Generator</h1>
+            <p>Generate unlimited balanced practice exams for your TELC B2 preparation</p>
+        </header>
+
+        <div class="stats">
+            <h3>📊 Exam Database Stats</h3>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">80+</div>
+                    <div class="stat-label">Reading Questions</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Writing Prompts</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Listening Tasks</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Speaking Topics</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="card">
+                <h2>📝 Create New Exam</h2>
+                <p>Generate a balanced mock exam with random questions across all four skills: Reading, Writing, Listening, and Speaking.</p>
+                <ul class="feature-list">
+                    <li>Balanced difficulty (easy, medium, hard)</li>
+                    <li>Complete exam structure</li>
+                    <li>Print-ready format</li>
+                    <li>Answer keys included</li>
+                </ul>
+                <div class="button-group">
+                    <button class="btn-primary" onclick="generateExam()">Generate Exam</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📚 View Sample Exams</h2>
+                <p>Browse pre-generated sample exams to see the exam format and structure. Each exam takes approximately 3.5 hours to complete.</p>
+                <ul class="feature-list">
+                    <li>3 complete sample exams</li>
+                    <li>Detailed explanations</li>
+                    <li>Answer keys</li>
+                    <li>Difficulty analysis</li>
+                </ul>
+                <div class="button-group">
+                    <button class="btn-primary" onclick="viewSamples()">View Samples</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>🤖 Local Setup & Automation</h2>
+                <p>Install the Python script locally to generate unlimited exams on your own machine. Perfect for creating personalized test packages.</p>
+                <ul class="feature-list">
+                    <li>Python script generator</li>
+                    <li>Custom question databases</li>
+                    <li>Batch exam creation</li>
+                    <li>Automated reporting</li>
+                </ul>
+                <div class="button-group">
+                    <button class="btn-secondary" onclick="downloadSetup()">Download Setup</button>
+                    <button class="btn-primary" onclick="viewDocs()">View Docs</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📖 Study Materials</h2>
+                <p>Access comprehensive learning resources including vocabulary lists, grammar guides, and answer explanations.</p>
+                <ul class="feature-list">
+                    <li>Vocabulary lists</li>
+                    <li>Grammar explanations</li>
+                    <li>Strategy guides</li>
+                    <li>Practice answers</li>
+                </ul>
+                <div class="button-group">
+                    <button class="btn-primary" onclick="accessMaterials()">Access Materials</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>⚙️ Configuration & Customization</h2>
+                <p>Customize your exam generation preferences: difficulty balance, time limits, question selection criteria, and more.</p>
+                <ul class="feature-list">
+                    <li>Difficulty settings</li>
+                    <li>Time adjustments</li>
+                    <li>Topic filtering</li>
+                    <li>Format preferences</li>
+                </ul>
+                <div class="button-group">
+                    <button class="btn-secondary" onclick="openSettings()">Open Settings</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>📤 Export & Sharing</h2>
+                <p>Export exams as PDF for printing or sharing with others. Track your progress across multiple exams.</p>
+                <ul class="feature-list">
+                    <li>PDF export</li>
+                    <li>Print-optimized</li>
+                    <li>Shareable links</li>
+                    <li>Progress tracking</li>
+                </ul>
+                <div class="button-group">
+                    <button class="btn-primary" onclick="exportExam()">Export as PDF</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>🚀 Quick Start Guide</h3>
+            <ol>
+                <li><strong>Generate an Exam:</strong> Click "Generate Exam" to create a new balanced practice test. Each exam includes all four TELC B2 skills.</li>
+                <li><strong>View Your Exam:</strong> The exam opens in your browser with complete formatting and is ready to download as PDF.</li>
+                <li><strong>Download as PDF:</strong> Use the print button to save as PDF or print directly. Perfect for offline practice.</li>
+                <li><strong>Access Answer Keys:</strong> Separate answer keys with detailed explanations are generated alongside each exam.</li>
+                <li><strong>Local Setup (Optional):</strong> For unlimited generation on your machine, install the Python script:
+                    <div class="code-block">
+python3 generate_exam.py
+                    </div>
+                </li>
+                <li><strong>Customize Questions:</strong> Edit <code>data/questions.json</code> to add your own questions and maintain a personal question bank.</li>
+            </ol>
+        </div>
+
+        <footer>
+            <p>TELC B2 Mock Exam Generator v1.0 | Created for exam preparation</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">Ready to deploy to Vercel/Netlify for unlimited access</p>
+        </footer>
+    </div>
+
+    <script>
+        function generateExam() {
+            alert('Exam generation requires running the Python script locally or via the API.\n\nFor now, visit /exams/ directory to see sample exams.');
+        }
+
+        function viewSamples() {
+            window.location.href = '/exams/';
+        }
+
+        function downloadSetup() {
+            alert('Download the complete setup from GitHub or your project repository.');
+        }
+
+        function viewDocs() {
+            alert('Full documentation available in README.md');
+        }
+
+        function accessMaterials() {
+            alert('Study materials directory: /materials/');
+        }
+
+        function openSettings() {
+            alert('Settings can be configured in the Python script parameters.');
+        }
+
+        function exportExam() {
+            window.print();
+        }
+    </script>
+</body>
+</html>
