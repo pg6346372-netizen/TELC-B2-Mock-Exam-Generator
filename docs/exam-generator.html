@@ -5,291 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TELC B2 Prüfungsgenerator</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             padding: 20px;
         }
-
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        .header {
-            text-align: center;
-            color: white;
-            margin-bottom: 30px;
-            padding-top: 20px;
-        }
-
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-
+        .container { max-width: 1100px; margin: 0 auto; }
+        .header { text-align: center; color: white; margin-bottom: 30px; padding-top: 20px; }
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
         .controls {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            align-items: center;
+            background: white; padding: 20px; border-radius: 8px; margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: flex; gap: 15px; flex-wrap: wrap;
         }
-
         button {
-            background-color: #667eea;
-            color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
+            background-color: #667eea; color: white; padding: 12px 24px;
+            border: none; border-radius: 4px; font-size: 16px; cursor: pointer;
             transition: background-color 0.3s;
         }
-
-        button:hover {
-            background-color: #5568d3;
-        }
-
-        button.print {
-            background-color: #48bb78;
-        }
-
-        button.print:hover {
-            background-color: #38a169;
-        }
-
+        button:hover { background-color: #5568d3; }
+        button.print { background-color: #48bb78; }
+        button.print:hover { background-color: #38a169; }
         .exam-container {
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-            min-height: 600px;
+            background: white; padding: 40px; border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15); min-height: 600px;
         }
-
-        .exam-header {
-            text-align: center;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-
-        .exam-header h2 {
-            color: #667eea;
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-
-        .exam-info {
-            color: #666;
-            font-size: 0.9em;
-        }
-
-        .section {
-            margin: 40px 0;
-            page-break-inside: avoid;
-        }
-
+        .exam-header { text-align: center; border-bottom: 3px solid #667eea; padding-bottom: 20px; margin-bottom: 30px; }
+        .exam-header h2 { color: #667eea; font-size: 2em; margin-bottom: 10px; }
+        .exam-info { color: #666; font-size: 0.9em; }
+        .section { margin: 40px 0; page-break-inside: avoid; }
         .section-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid #667eea;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            display: flex; justify-content: space-between; align-items: center;
+            border-bottom: 2px solid #667eea; padding-bottom: 10px; margin-bottom: 20px;
         }
-
-        .section-header h3 {
-            color: #667eea;
-            font-size: 1.5em;
-            margin: 0;
-        }
-
+        .section-header h3 { color: #667eea; font-size: 1.5em; margin: 0; }
         .time-badge {
-            background-color: #667eea;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: bold;
+            background-color: #667eea; color: white; padding: 5px 15px;
+            border-radius: 20px; font-size: 14px; font-weight: bold;
         }
-
-        .time-badge.oral {
-            background-color: #e74c3c;
-        }
-
-        .timer-display {
-            background-color: #f39c12;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: bold;
-            display: none;
-        }
-
-        .timer-display.active {
-            display: inline-block;
-            animation: pulse 1s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.7; }
-        }
-
-        .question {
-            margin: 25px 0;
-            padding: 15px;
-            border-left: 4px solid #667eea;
-            background-color: #f9f9f9;
-        }
-
-        .question-number {
-            font-weight: bold;
-            color: #667eea;
-            margin-bottom: 10px;
-            font-size: 1.1em;
-        }
-
+        .time-badge.oral { background-color: #e74c3c; }
+        .question { margin: 25px 0; padding: 15px; border-left: 4px solid #667eea; background-color: #f9f9f9; }
+        .question-number { font-weight: bold; color: #667eea; margin-bottom: 10px; font-size: 1.1em; }
         .passage {
-            background-color: #f0f0f0;
-            padding: 15px;
-            margin-bottom: 15px;
-            border-left: 4px solid #666;
-            font-size: 0.95em;
-            line-height: 1.6;
-            white-space: pre-wrap;
-            border-radius: 4px;
+            background-color: #f0f0f0; padding: 15px; margin-bottom: 15px;
+            border-left: 4px solid #666; font-size: 0.95em; line-height: 1.6;
+            white-space: pre-wrap; border-radius: 4px;
         }
-
-        .question-text {
-            margin: 15px 0;
-            font-weight: 500;
-            font-size: 1em;
-        }
-
-        .options {
-            margin-top: 15px;
-            padding-left: 20px;
-        }
-
-        .option {
-            margin: 8px 0;
-            line-height: 1.6;
-        }
-
+        .question-text { margin: 15px 0; font-weight: 500; font-size: 1em; }
+        .options { margin-top: 15px; padding-left: 20px; }
+        .option { margin: 8px 0; line-height: 1.6; }
         .answer-key {
-            background-color: #e8f4f8;
-            border-left: 4px solid #00a86b;
-            padding: 10px;
-            margin-top: 10px;
-            font-size: 0.95em;
+            background-color: #e8f4f8; border-left: 4px solid #00a86b;
+            padding: 10px; margin-top: 10px; font-size: 0.95em;
         }
-
-        .answer-key strong {
-            color: #00a86b;
+        .answer-key strong { color: #00a86b; }
+        .matching-section {
+            display: flex; gap: 40px; margin: 20px 0;
         }
-
-        .footer {
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            text-align: center;
-            color: #999;
-            font-size: 12px;
-        }
-
-        .loading {
-            text-align: center;
-            padding: 40px;
-            color: #667eea;
-            font-size: 1.2em;
-        }
-
-        .empty-state {
-            text-align: center;
-            padding: 60px 20px;
-            color: #999;
-        }
-
-        .empty-state p {
-            font-size: 1.1em;
-            margin-bottom: 20px;
-        }
-
+        .matching-column { flex: 1; }
+        .matching-column h4 { margin-bottom: 15px; color: #667eea; font-weight: bold; }
+        .matching-item { margin: 10px 0; padding: 8px; background: #f5f5f5; border-radius: 4px; }
+        .footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #ddd; text-align: center; color: #999; font-size: 12px; }
+        .empty-state { text-align: center; padding: 60px 20px; color: #999; }
+        .empty-state p { font-size: 1.1em; margin-bottom: 20px; }
         @media print {
-            body {
-                background: white;
-            }
-
-            .controls {
-                display: none;
-            }
-
-            .exam-container {
-                box-shadow: none;
-            }
+            body { background: white; }
+            .controls { display: none; }
+            .exam-container { box-shadow: none; }
         }
-
-        .teil-label {
-            color: #999;
-            font-size: 0.9em;
-            font-weight: normal;
-            margin-left: 10px;
-        }
-
+        .teil-label { color: #999; font-size: 0.9em; font-weight: normal; margin-left: 10px; }
         .timer-section {
-            background-color: #fff3cd;
-            padding: 15px;
-            border-radius: 4px;
-            margin: 15px 0;
-            text-align: center;
-            display: none;
+            background-color: #fff3cd; padding: 15px; border-radius: 4px;
+            margin: 15px 0; text-align: center; display: none;
         }
-
-        .timer-section.active {
-            display: block;
-        }
-
-        .timer-section h4 {
-            margin-bottom: 10px;
-            color: #856404;
-        }
-
-        .timer-countdown {
-            font-size: 2em;
-            font-weight: bold;
-            color: #e74c3c;
-        }
-
-        .timer-button {
-            background-color: #e74c3c;
-            margin-top: 10px;
-        }
-
-        .timer-button:hover {
-            background-color: #c0392b;
-        }
-
-        .timer-button.stop {
-            background-color: #27ae60;
-        }
-
-        .timer-button.stop:hover {
-            background-color: #229954;
-        }
+        .timer-section.active { display: block; }
+        .timer-section h4 { margin-bottom: 10px; color: #856404; }
+        .timer-countdown { font-size: 2em; font-weight: bold; color: #e74c3c; }
+        .timer-button { background-color: #e74c3c; margin-top: 10px; }
+        .timer-button:hover { background-color: #c0392b; }
     </style>
 </head>
 <body>
@@ -317,7 +111,6 @@
 
     <script>
         let questionsData = null;
-        let oralTimers = {};
 
         async function loadQuestions() {
             try {
@@ -332,39 +125,6 @@
         function getRandomQuestion(array) {
             if (!array || array.length === 0) return null;
             return array[Math.floor(Math.random() * array.length)];
-        }
-
-        function startOralTimer(sectionId) {
-            let timeLeft = 120;
-            const timerDisplay = document.getElementById(`timer-${sectionId}`);
-            const button = document.getElementById(`timer-btn-${sectionId}`);
-
-            if (oralTimers[sectionId]) {
-                clearInterval(oralTimers[sectionId]);
-                oralTimers[sectionId] = null;
-                button.textContent = '⏱️ Timer starten';
-                button.classList.remove('stop');
-                timerDisplay.parentElement.classList.remove('active');
-                return;
-            }
-
-            timerDisplay.parentElement.classList.add('active');
-            button.textContent = '⏱️ Timer stoppen';
-            button.classList.add('stop');
-
-            oralTimers[sectionId] = setInterval(() => {
-                timeLeft--;
-                const minutes = Math.floor(timeLeft / 60);
-                const seconds = timeLeft % 60;
-                timerDisplay.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-
-                if (timeLeft <= 0) {
-                    clearInterval(oralTimers[sectionId]);
-                    oralTimers[sectionId] = null;
-                    button.textContent = '⏱️ Zeit abgelaufen!';
-                    button.disabled = true;
-                }
-            }, 1000);
         }
 
         function generateNewExam() {
@@ -383,15 +143,14 @@
                 <div class="exam-info">
                     Generiert: ${now.toLocaleDateString('de-DE')} | Prüfungs-ID: ${examId}
                 </div>
-            </div>
-            `;
+            </div>`;
 
             const sections = [
-                { key: 'lesen', title: 'LESEN', time: 45, type: 'regular' },
-                { key: 'lesen_und_schreiben', title: 'LESEN UND SCHREIBEN', time: 60, type: 'regular' },
-                { key: 'horen', title: 'HÖREN', time: 30, type: 'regular' },
-                { key: 'horen_und_schreiben', title: 'HÖREN UND SCHREIBEN', time: 30, type: 'regular' },
-                { key: 'sprachbausteine', title: 'SPRACHBAUSTEINE', time: 15, type: 'regular' },
+                { key: 'lesen', title: 'LESEN', time: 45, type: 'reading' },
+                { key: 'lesen_und_schreiben', title: 'LESEN UND SCHREIBEN', time: 60, type: 'writing' },
+                { key: 'horen', title: 'HÖREN', time: 30, type: 'listening' },
+                { key: 'horen_und_schreiben', title: 'HÖREN UND SCHREIBEN', time: 30, type: 'listening' },
+                { key: 'sprachbausteine', title: 'SPRACHBAUSTEINE', time: 15, type: 'grammar' },
                 { key: 'mundlich', title: 'MÜNDLICH PRÜFUNG', time: 2, type: 'oral' }
             ];
 
@@ -404,102 +163,122 @@
                     <div class="section-header">
                         <h3>${section.title}</h3>
                         <div class="time-badge ${section.type === 'oral' ? 'oral' : ''}">⏱️ ${section.time} Min.</div>
-                    </div>
-                `;
+                    </div>`;
 
-                if (section.type === 'oral') {
-                    const teile = Object.keys(sectionData);
-                    teile.forEach((teil, teilIndex) => {
-                        const sectionId = `oral-${section.key}-${teilIndex}`;
-                        html += `
-                        <div class="question">
-                            <div class="question-number">Teil ${teilIndex + 1}: ${sectionData[teil][0].topic}</div>
-                            <div class="question-text">${sectionData[teil][0].question}</div>
-                            <div class="timer-section" id="timer-${sectionId}">
-                                <h4>⏱️ Sprechzeit: 2 Minuten</h4>
-                                <div class="timer-countdown">2:00</div>
-                                <button class="timer-button" id="timer-btn-${sectionId}" onclick="startOralTimer('${sectionId}')">⏱️ Timer starten</button>
-                            </div>
-                        </div>
-                        `;
-                    });
-                } else {
-                    const teile = Object.keys(sectionData);
-                    let questionCounter = 1;
-
-                    teile.forEach(teil => {
-                        const passages = sectionData[teil];
-                        if (passages && passages.length > 0) {
-                            const passage = passages[Math.floor(Math.random() * passages.length)];
-
+                if (section.key === 'lesen') {
+                    const teil1 = sectionData.teil1;
+                    if (teil1 && teil1.length > 0) {
+                        const task = teil1[0];
+                        if (task.type === 'matching' && task.persons) {
                             html += `<div class="question">`;
-                            html += `<div class="question-number">Aufgabe ${questionCounter} <span class="teil-label">(${teil})</span></div>`;
+                            html += `<div class="question-number">Aufgabe 1-5 <span class="teil-label">(Teil 1 - Zuordnung)</span></div>`;
+                            html += `<div style="margin: 20px 0;"><strong>Lesen Sie die Texte und die Aufgaben 1-5. Welcher Text passt zu welcher Person?</strong></div>`;
 
-                            if (passage.passage) {
-                                html += `<div class="passage">${passage.passage}</div>`;
+                            // Show persons and articles side by side
+                            html += `<div class="matching-section">
+                                <div class="matching-column">
+                                    <h4>Personen:</h4>`;
+                            task.persons.forEach(p => {
+                                html += `<div class="matching-item"><strong>${p.number}.</strong> ${p.description}</div>`;
+                            });
+                            html += `</div>
+                                <div class="matching-column">
+                                    <h4>Artikel:</h4>`;
+                            task.articles.forEach(a => {
+                                html += `<div class="matching-item"><strong>${a.label})</strong> ${a.title}<br><span style="font-size: 0.9em; color: #666;">${a.text.substring(0, 150)}...</span></div>`;
+                            });
+                            html += `</div></div>`;
+
+                            if (showAnswers && task.answers) {
+                                html += `<div class="answer-key">`;
+                                html += `<strong>Lösungen:</strong><br>`;
+                                task.answers.forEach(ans => {
+                                    html += `${ans.person} → ${ans.article}<br>`;
+                                });
+                                html += `</div>`;
                             }
+                            html += `</div>`;
+                        }
+                    }
 
-                            // Handle new structure with nested questions
-                            if (passage.questions && passage.questions.length > 0) {
-                                passage.questions.forEach((q, qIdx) => {
-                                    html += `<div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #ddd;">`;
-                                    html += `<div class="question-text"><strong>Frage ${q.number}:</strong> ${q.question}</div>`;
+                    // Teil 2
+                    const teil2 = sectionData.teil2;
+                    if (teil2 && teil2.length > 0) {
+                        let questionNum = 6;
+                        teil2.forEach((task, idx) => {
+                            html += `<div class="question">`;
+                            html += `<div class="question-number">Aufgabe ${questionNum}-${questionNum+1} <span class="teil-label">(Teil 2)</span></div>`;
+                            html += `<div style="font-weight: bold; margin-bottom: 10px;">${task.title}</div>`;
+                            html += `<div class="passage">${task.passage}</div>`;
 
-                                    if (q.options && q.options.length > 0) {
+                            if (task.questions) {
+                                task.questions.forEach(q => {
+                                    html += `<div style="margin: 15px 0; padding: 10px; border-top: 1px solid #ddd;">`;
+                                    html += `<strong>Frage ${q.number}:</strong> ${q.text}<br>`;
+                                    if (q.options) {
                                         html += `<div class="options">`;
-                                        q.options.forEach((option, optIndex) => {
-                                            html += `<div class="option">(${String.fromCharCode(97 + optIndex)}) ${option}</div>`;
+                                        q.options.forEach(opt => {
+                                            html += `<div class="option">(${opt.label}) ${opt.text}</div>`;
                                         });
                                         html += `</div>`;
                                     }
-
                                     if (showAnswers && q.answer) {
-                                        html += `
-                                        <div class="answer-key">
-                                            <strong>Antwort:</strong> ${q.answer}
-                                        </div>
-                                        `;
+                                        html += `<div class="answer-key"><strong>Antwort:</strong> ${q.answer}</div>`;
                                     }
                                     html += `</div>`;
                                 });
-                            } else {
-                                // Fallback for old structure
-                                html += `<div class="question-text">${passage.text}</div>`;
-
-                                if (passage.options && passage.options.length > 0) {
-                                    html += `<div class="options">`;
-                                    passage.options.forEach((option, optIndex) => {
-                                        html += `<div class="option">(${String.fromCharCode(97 + optIndex)}) ${option}</div>`;
-                                    });
-                                    html += `</div>`;
-                                }
-
-                                if (showAnswers && passage.answer) {
-                                    html += `
-                                    <div class="answer-key">
-                                        <strong>Antwort:</strong> ${passage.answer}<br>
-                                        <strong>Erklärung:</strong> ${passage.explanation || 'Siehe Lösungsschlüssel'}
-                                    </div>
-                                    `;
-                                }
                             }
-
                             html += `</div>`;
-                            questionCounter++;
-                        }
+                            questionNum += 2;
+                        });
+                    }
+                } else if (section.key === 'lesen_und_schreiben') {
+                    html += `<div class="question"><div class="question-number">Aufgabe 1-2 <span class="teil-label">(Schreib- und Leseverstehen)</span></div>`;
+                    html += `<p><em>Schreibaufgaben sind individuell und müssen von einem Prüfer bewertet werden.</em></p>`;
+                    html += `</div>`;
+                } else if (section.key === 'mundlich') {
+                    const teile = Object.keys(sectionData);
+                    teile.forEach((teil, idx) => {
+                        const q = sectionData[teil][0];
+                        html += `<div class="question">`;
+                        html += `<div class="question-number">Teil ${idx + 1}: ${q.topic}</div>`;
+                        html += `<div class="question-text">${q.question || q.text}</div>`;
+                        html += `<div class="timer-section" id="timer-${teil}">
+                            <h4>⏱️ Sprechzeit: 2 Minuten</h4>
+                            <div class="timer-countdown">2:00</div>
+                            <button class="timer-button" onclick="startOralTimer('${teil}')">⏱️ Timer starten</button>
+                        </div>`;
+                        html += `</div>`;
                     });
+                } else {
+                    html += `<div class="question"><p><em>${section.title}: Aufgaben vorhanden - bitte Audiodateien hinzufügen</em></p></div>`;
                 }
 
                 html += `</div>`;
             });
 
-            html += `
-            <div class="footer">
-                <p>TELC B2 Prüfungsgenerator | Zum Üben und zur Vorbereitung nutzen</p>
-            </div>
-            `;
+            html += `<div class="footer"><p>TELC B2 Prüfungsgenerator | Zum Üben und zur Vorbereitung nutzen</p></div>`;
 
             document.getElementById('examContainer').innerHTML = html;
+        }
+
+        function startOralTimer(sectionId) {
+            let timeLeft = 120;
+            const timerDisplay = document.getElementById(`timer-${sectionId}`).querySelector('.timer-countdown');
+            const button = event.target;
+
+            const interval = setInterval(() => {
+                timeLeft--;
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                timerDisplay.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+
+                if (timeLeft <= 0) {
+                    clearInterval(interval);
+                    button.textContent = '⏱️ Zeit abgelaufen!';
+                    button.disabled = true;
+                }
+            }, 1000);
         }
 
         loadQuestions();
