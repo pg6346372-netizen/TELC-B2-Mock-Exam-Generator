@@ -1,10 +1,10 @@
 {
   "version": 2,
   "public": "web",
-  "builds": [
+  "rewrites": [
     {
-      "src": "web/**",
-      "use": "@vercel/static"
+      "source": "/:path((?!.*\\.).*)",
+      "destination": "/index.html"
     }
   ]
 }
