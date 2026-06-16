@@ -4,6 +4,7 @@
   "description": "Generate unlimited balanced TELC B2 mock exams with separate answer keys",
   "main": "generate_exam.py",
   "scripts": {
+    "build": "echo 'Static site - no build needed'",
     "generate": "python3 generate_exam.py",
     "generate:batch": "python3 generate_exam.py --count=10",
     "start": "python3 -m http.server 8000 --directory web"
