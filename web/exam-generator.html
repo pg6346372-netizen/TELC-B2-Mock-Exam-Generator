@@ -276,7 +276,7 @@
         // Load questions on page load
         async function loadQuestions() {
             try {
-                const response = await fetch('../data/questions.json');
+                const response = await fetch('./questions.json');
                 questionsData = await response.json();
             } catch (error) {
                 console.error('Error loading questions:', error);
