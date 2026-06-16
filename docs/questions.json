@@ -1,316 +1,68 @@
 {
   "lesen": {
-    "easy": [
-      {
-        "id": "L_E_001",
-        "passage": "PERSONEN:\n1. Laura möchte während des Studiums Berufserfahrung sammeln.\n2. Igor hat Familie und möchte im europäischen Ausland arbeiten.\n3. Jens interessiert sich für das Thema Umweltschutz in Unternehmen.\n\nARTIKEL:\na) Erfolgreich neue Wege gehen\ne) Der richtige Praktikumsplatz\nh) Neue Broschüre",
-        "text": "Welcher Artikel passt zu Laura?",
-        "options": ["a)", "e)", "h)"],
-        "answer": "e)",
-        "explanation": "Artikel e spricht speziell von Praktikumsmöglichkeiten für Studenten, was perfekt zu Lauras Wunsch passt.",
-        "difficulty": "easy",
-        "source": "Einfach besser 400"
-      },
-      {
-        "id": "L_E_002",
-        "passage": "BETRIEBSSPORT\nDie Gesundheit unserer Mitarbeiter liegt uns sehr am Herzen. Das Sportprogramm ist kostenlos.\n\nNeu und noch nicht im Programmheft enthalten ist der Kurs 'Yoga in der Mittagspause', der ab 15. Mai montags und mittwochs von 12:30 bis 13:15 Uhr stattfindet.",
-        "text": "Im Programmheft erfährt man, wo der Kurs 'Yoga in der Mittagspause' stattfindet. Ist das richtig oder falsch?",
-        "options": ["Richtig", "Falsch"],
-        "answer": "Falsch",
-        "explanation": "Der Text sagt: 'Neu und noch NICHT im Programmheft enthalten ist der Kurs Yoga'. Also ist die Aussage falsch.",
-        "difficulty": "easy",
-        "source": "Einfach besser 400"
-      },
-      {
-        "id": "L_E_003",
-        "passage": "ARBEITSZEIT\nDie wöchentliche Arbeitszeit bei einer Vollzeitstelle beträgt 38,5 Stunden.",
-        "text": "Wie viele Stunden pro Woche muss man bei einer Vollzeitstelle arbeiten?",
-        "options": ["35 Stunden", "38,5 Stunden", "40 Stunden"],
-        "answer": "38,5 Stunden",
-        "explanation": "Der Text sagt klar: 'Die wöchentliche Arbeitszeit bei einer Vollzeitstelle beträgt 38,5 Stunden.'",
-        "difficulty": "easy",
-        "source": "Einfach besser 400"
-      },
-      {
-        "id": "L_E_004",
-        "passage": "PAUSEN\nBei einer Arbeitszeit von über sechs Stunden muss spätestens nach vier Stunden eine 30-minütige Pause eingelegt werden.",
-        "text": "Wann muss eine Pause gemacht werden?",
-        "options": ["Nach 2 Stunden", "Nach 4 Stunden", "Nach 5 Stunden"],
-        "answer": "Nach 4 Stunden",
-        "explanation": "Der Text sagt: 'Bei einer Arbeitszeit von über sechs Stunden muss spätestens nach VIER Stunden eine 30-minütige Pause eingelegt werden.'",
-        "difficulty": "easy",
-        "source": "Einfach besser 400"
-      },
-      {
-        "id": "L_E_005",
-        "passage": "ZEITKARTE\nDie Zeitkarte ist Ihr Zahlungsmittel in der Kantine und auch Ihre Zugangskarte zu den Labors und Umkleideräumen.",
-        "text": "Die Zeitkarte hat mehr als eine Funktion. Ist das richtig oder falsch?",
-        "options": ["Richtig", "Falsch"],
-        "answer": "Richtig",
-        "explanation": "Die Zeitkarte hat mindestens 3 Funktionen: Zeiterfassung, Zahlungsmittel, Zugangskarte.",
-        "difficulty": "easy",
-        "source": "Einfach besser 400"
-      }
+    "teil1": [
+      {"id": "L1_001", "passage": "PERSONEN:\n1. Laura möchte während des Studiums Berufserfahrung sammeln.\n2. Igor hat Familie und möchte im europäischen Ausland arbeiten.\n3. Jens interessiert sich für das Thema Umweltschutz in Unternehmen.\n\nARTIKEL:\na) Erfolgreich neue Wege gehen\ne) Der richtige Praktikumsplatz\nh) Neue Broschüre", "text": "Welcher Artikel passt zu Laura?", "options": ["a)", "e)", "h)"], "answer": "e)", "explanation": "Artikel e spricht speziell von Praktikumsmöglichkeiten für Studenten.", "time": 45}
     ],
-    "medium": [
-      {
-        "id": "L_M_001",
-        "passage": "BETRIEBSSPORTMÖGLICHKEITEN\nTeilnahme am kostenlosen Betriebssportprogramm. In den Mannschaftssportarten Tischtennis und Fußball besteht die Möglichkeit, neben dem Training auch an Turnieren mit anderen Firmen-Teams teilzunehmen.",
-        "text": "Was können die Mitarbeiter tun?",
-        "options": [
-          "Sie dürfen nur nach der Arbeit trainieren",
-          "Sie können an Wettkämpfen teilnehmen",
-          "Sie müssen alle Kurse selbst bezahlen"
-        ],
-        "answer": "Sie können an Wettkämpfen teilnehmen",
-        "explanation": "Der Text sagt, dass Mitarbeiter in Tischtennis und Fußball auch an Turnieren mit anderen Teams teilnehmen können.",
-        "difficulty": "medium",
-        "source": "Einfach besser 400"
-      },
-      {
-        "id": "L_M_002",
-        "passage": "KERNARBEITSZEIT\nWir haben flexible Arbeitszeiten. Die regulären Betriebszeiten sind von 7:30 bis 18:00 Uhr. Während der Kernarbeitszeit von 9:30 bis 15:00 müssen alle Mitarbeiter anwesend sein.",
-        "text": "Was ist die Kernarbeitszeit?",
-        "options": ["7:30 bis 18:00 Uhr", "9:30 bis 15:00 Uhr", "8:00 bis 17:00 Uhr"],
-        "answer": "9:30 bis 15:00 Uhr",
-        "explanation": "Der Text sagt: 'Während der Kernarbeitszeit von 9:30 bis 15:00 müssen alle Mitarbeiter anwesend sein.'",
-        "difficulty": "medium",
-        "source": "Einfach besser 400"
-      },
-      {
-        "id": "L_M_003",
-        "passage": "ÜBERSTUNDEN\nÜberstunden werden grundsätzlich nicht ausbezahlt, sie können aber in Freizeit umgewandelt werden. Dies muss von der Teamleitung schriftlich genehmigt werden.",
-        "text": "Wie werden Überstunden normalerweise bezahlt?",
-        "options": [
-          "Mit zusätzlichem Geld",
-          "Mit zusätzlichen freien Tagen (wenn genehmigt)",
-          "Überstunden werden nicht akzeptiert"
-        ],
-        "answer": "Mit zusätzlichen freien Tagen (wenn genehmigt)",
-        "explanation": "Der Text sagt: 'Überstunden werden grundsätzlich nicht ausbezahlt, sie können aber in Freizeit umgewandelt werden.'",
-        "difficulty": "medium",
-        "source": "Einfach besser 400"
-      },
-      {
-        "id": "L_M_004",
-        "passage": "URLAUBSPLANUNG\nDie Urlaubsplanung muss bis zum 31. März abgeschlossen sein. Pro Team sollten nie mehr als zwei Mitarbeiter zeitgleich abwesend sein.",
-        "text": "Wie viele Mitarbeiter dürfen pro Team gleichzeitig Urlaub nehmen?",
-        "options": ["Einer", "Zwei", "Drei"],
-        "answer": "Zwei",
-        "explanation": "Der Text sagt: 'Pro Team sollten NIEMALS mehr als ZWEI Mitarbeiter zeitgleich abwesend sein.'",
-        "difficulty": "medium",
-        "source": "Einfach besser 400"
-      },
-      {
-        "id": "L_M_005",
-        "passage": "GESCHÄFTSERGEBNIS\nDas vergangene Geschäftsjahr konnte mit einem Umsatzplus von ca. 800.000 Euro abgeschlossen werden. Die neu eingeführten Gesichtspflegeprodukte wurden von den Kundinnen gut angenommen.",
-        "text": "Wie war das Geschäftsjahr?",
-        "options": [
-          "Es war schwach",
-          "Es war erfolgreich",
-          "Es war stabil aber nicht gut"
-        ],
-        "answer": "Es war erfolgreich",
-        "explanation": "Der Text sagt: 'Das vergangene Geschäftsjahr konnte mit einem Umsatzplus von ca. 800.000 Euro abgeschlossen werden.'",
-        "difficulty": "medium",
-        "source": "Einfach besser 400"
-      }
+    "teil2": [
+      {"id": "L2_001", "passage": "BETRIEBSSPORT\nDie Gesundheit unserer Mitarbeiter liegt uns sehr am Herzen. Das Sportprogramm ist kostenlos.\nNeu und noch nicht im Programmheft enthalten ist der Kurs 'Yoga in der Mittagspause', der ab 15. Mai montags und mittwochs von 12:30 bis 13:15 Uhr stattfindet.", "text": "Im Programmheft erfährt man, wo der Kurs 'Yoga in der Mittagspause' stattfindet. Ist das richtig oder falsch?", "options": ["Richtig", "Falsch"], "answer": "Falsch", "explanation": "Der Text sagt: 'Neu und noch NICHT im Programmheft enthalten ist der Kurs Yoga'.", "time": 45}
     ],
-    "hard": [
-      {
-        "id": "L_H_001",
-        "passage": "KUNDENSERVICE-STÖRUNG\nIn der vergangenen Woche ist die Telefonanlage im Kundenservice für zwei Tage lang ausgefallen. Die Servicenummern waren 48 Stunden lang nicht erreichbar. Dies führte zu einer Welle von Kundenbeschwerden.",
-        "text": "Was ist mit dem Kundenservice passiert?",
-        "options": [
-          "Das Serviceteam hat sich beschwert",
-          "Die Telefonanlage war nicht erreichbar",
-          "Der Service ist komplett geschlossen"
-        ],
-        "answer": "Die Telefonanlage war nicht erreichbar",
-        "explanation": "Der Text sagt: 'die Telefonanlage im Kundenservice ausgefallen ist' und 'Die Servicenummern waren 48 Stunden lang nicht erreichbar.'",
-        "difficulty": "hard",
-        "source": "Einfach besser 400"
-      },
-      {
-        "id": "L_H_002",
-        "passage": "NEUE SICHERHEITSMASSNAHMEN\nMitte März wird im gesamten Unternehmen eine neue Schließanlage installiert. Der Zugang zu den Laboren funktioniert demnächst nur noch mittels eines Zahlencodes.",
-        "text": "Welche neue Sicherheitsmaßnahme wird eingeführt?",
-        "options": [
-          "Fingerabdruck-Scanner",
-          "Elektronische Zahlencodes für Laborzugang",
-          "Alle Türen werden verriegelt"
-        ],
-        "answer": "Elektronische Zahlencodes für Laborzugang",
-        "explanation": "Der Text sagt: 'Der Zugang zu den Laboren funktioniert demnächst nur noch mittels eines Zahlencodes.'",
-        "difficulty": "hard",
-        "source": "Einfach besser 400"
-      },
-      {
-        "id": "L_H_003",
-        "passage": "PARKPLATZ-PROBLEME\nIn letzter Zeit ist es häufiger vorgekommen, dass Autos auf dem Mitarbeiterparkplatz abgestellt wurden, deren Eigentümer keine Parkkarte besitzen. Die Schranke wird von Parkkarteninhabern für Kollegen ohne Berechtigung geöffnet.",
-        "text": "Was ist das Hauptproblem auf dem Parkplatz?",
-        "options": [
-          "Der Parkplatz ist zu klein",
-          "Unbefugte parken dort ohne Genehmigung",
-          "Die Schranke funktioniert nicht"
-        ],
-        "answer": "Unbefugte parken dort ohne Genehmigung",
-        "explanation": "Das Problem ist, dass Mitarbeiter ohne Parkkarte von anderen hineingelassen werden.",
-        "difficulty": "hard",
-        "source": "Einfach besser 400"
-      }
+    "teil3": [
+      {"id": "L3_001", "passage": "ARBEITSZEIT\nDie wöchentliche Arbeitszeit bei einer Vollzeitstelle beträgt 38,5 Stunden.\nBei einer Arbeitszeit von über sechs Stunden muss spätestens nach vier Stunden eine 30-minütige Pause eingelegt werden.", "text": "Wie viele Stunden pro Woche muss man bei einer Vollzeitstelle arbeiten?", "options": ["35 Stunden", "38,5 Stunden", "40 Stunden"], "answer": "38,5 Stunden", "explanation": "Der Text sagt klar: 'Die wöchentliche Arbeitszeit bei einer Vollzeitstelle beträgt 38,5 Stunden.'", "time": 45}
+    ],
+    "teil4": [
+      {"id": "L4_001", "passage": "PAUSEN\nBei einer Arbeitszeit von über sechs Stunden muss spätestens nach vier Stunden eine 30-minütige Pause eingelegt werden.", "text": "Wann muss eine Pause gemacht werden?", "options": ["Nach 2 Stunden", "Nach 4 Stunden", "Nach 5 Stunden"], "answer": "Nach 4 Stunden", "explanation": "Der Text sagt: 'spätestens nach VIER Stunden eine 30-minütige Pause'.", "time": 45}
     ]
   },
-  "schreiben": {
-    "easy": [
-      {
-        "id": "S_E_001",
-        "passage": "Sie haben eine E-Mail von Ihrem neuen Chef erhalten. Schreiben Sie eine Antwort (100-150 Wörter) und stellen Sie sich vor. Nennen Sie: Ihren Namen, wo Sie vorher gearbeitet haben, Ihre Qualifikationen.",
-        "text": "Schreiben Sie eine formale E-Mail",
-        "options": null,
-        "answer": "Beispiel: Betreffzeile, formale Anrede 'Sehr geehrter/Sehr geehrte', Selbstvorstellung mit Name, vorherige Position, Qualifikationen, höfliche Grußformel.",
-        "explanation": "Formale Geschäftskommunikation. Struktur: Betreffzeile, Anrede, Selbstvorstellung, Qualifikationen, Abschluss.",
-        "difficulty": "easy",
-        "source": "TELC B2"
-      },
-      {
-        "id": "S_E_002",
-        "passage": "Schreiben Sie eine kurze E-Mail an einen Kollegen (50-80 Wörter) und bitten Sie um Hilfe bei einem Projekt.",
-        "text": "Formulieren Sie eine informelle Anfrage",
-        "options": null,
-        "answer": "Beispiel: Betreffzeile, Anrede, Grund der Anfrage, spezifische Bitte, Dankbarkeit, ungezwungener Abschluss.",
-        "explanation": "Informelle, aber professionelle Kommunikation. Sei direkt und zeige Wertschätzung.",
-        "difficulty": "easy",
-        "source": "TELC B2"
-      }
+  "lesen_und_schreiben": {
+    "teil1": [
+      {"id": "LS1_001", "passage": "Liebe Anna,\nvielen Dank für deine E-Mail! Es freut mich, dass du mich besuchen möchtest. Leider bin ich in den nächsten Wochen sehr beschäftigt mit meinem neuen Job.", "text": "Ergänzen Sie: Der Sender ist _____ mit seinem neuen Job.", "options": ["zufrieden", "beschäftigt", "unglücklich"], "answer": "beschäftigt", "explanation": "Im Text steht: 'Leider bin ich in den nächsten Wochen sehr beschäftigt mit meinem neuen Job.'", "time": 60}
     ],
-    "medium": [
-      {
-        "id": "S_M_001",
-        "passage": "Sie haben ein Paket per Post erhalten, das beschädigt ist. Schreiben Sie einen Beschwerde-Brief an das Versandunternehmen (180-220 Wörter). Nennen Sie: Bestellnummer, Schadensart, Ihre Forderung.",
-        "text": "Verfassen Sie einen Beschwerde-Brief",
-        "options": null,
-        "answer": "Beispiel: Formales Layout, genaue Bestellnummer, detaillierte Schadenbeschreibung, Fotos erwähnen, konkrete Forderung (Ersatz/Rückerstattung), Frist setzen.",
-        "explanation": "Beschwerdeschreiben erfordern: spezifische Details, sachlicher Ton, klare Forderung, angemessene Frist.",
-        "difficulty": "medium",
-        "source": "TELC B2"
-      }
-    ],
-    "hard": [
-      {
-        "id": "S_H_001",
-        "passage": "Ein Kunde hat sich beschwert, dass Ihr Unternehmen ein Service-Versprechen nicht eingehalten hat. Schreiben Sie einen Entschädigungs-Brief (300-350 Wörter).",
-        "text": "Schreiben Sie einen professionellen Entschädigungs-Brief",
-        "options": null,
-        "answer": "Beispiel: Aufrichtige Entschuldigung, Verständnis für Frustration, Analyse was falsch lief, konkrete Maßnahmen, spezifisches Entschädigungsangebot, Versicherung verbesserter Service.",
-        "explanation": "Krisenmanagement. Sei ehrlich, übernehme Verantwortung, biete konkrete Lösungen an.",
-        "difficulty": "hard",
-        "source": "TELC B2"
-      }
+    "teil2": [
+      {"id": "LS2_001", "passage": "Schreiben Sie eine E-Mail (80-100 Wörter):\nIhr Freund/Ihre Freundin hat Sie zu einer Party eingeladen. Sie können leider nicht kommen. Schreiben Sie, warum nicht und machen Sie einen anderen Termin vor.", "text": "E-Mail schreiben", "options": [], "answer": "Individuelle Antwort", "explanation": "Dies ist eine Schreibaufgabe. Die Antwort wird individuell bewertet.", "time": 60}
     ]
   },
   "horen": {
-    "easy": [
-      {
-        "id": "H_E_001",
-        "passage": "Sie hören einen Dialog zwischen zwei Arbeitskollegen.",
-        "text": "Warum ist der Mitarbeiter zu spät gekommen?",
-        "options": ["Verkehrsstau", "Zahnarzttermin", "Auto-Problem"],
-        "answer": "Zahnarzttermin",
-        "explanation": "Der Mitarbeiter sagt im Dialog: 'Entschuldigen Sie, mein Zahnarzttermin hat länger gedauert als erwartet.'",
-        "difficulty": "easy",
-        "source": "TELC B2"
-      },
-      {
-        "id": "H_E_002",
-        "passage": "Sie hören eine Ankündigung über neue Betriebsregeln.",
-        "text": "Wie viele Stunden pro Woche muss man arbeiten?",
-        "options": ["35 Stunden", "38,5 Stunden", "40 Stunden"],
-        "answer": "38,5 Stunden",
-        "explanation": "Der Manager sagt: 'Die wöchentliche Arbeitszeit beträgt 38,5 Stunden.'",
-        "difficulty": "easy",
-        "source": "TELC B2"
-      }
+    "teil1": [
+      {"id": "H1_001", "text": "Sie hören einen kurzen Dialog. Wählen Sie die richtige Antwort.", "question": "Was ist das Thema?", "options": ["Ein Geschäftstreffen", "Ein privates Gespräch", "Eine Reservierung"], "answer": "Ein Geschäftstreffen", "explanation": "Im Dialog werden geschäftliche Themen besprochen.", "time": 30}
     ],
-    "medium": [
-      {
-        "id": "H_M_001",
-        "passage": "Sie hören ein Interview mit einem Geschäftsführer über sein Unternehmen.",
-        "text": "Was ist das Hauptproblem des Unternehmens?",
-        "options": [
-          "Zu viele Mitarbeiter",
-          "Mangel an qualifizierten Fachkräften",
-          "Zu hohe Produktionskosten"
-        ],
-        "answer": "Mangel an qualifizierten Fachkräften",
-        "explanation": "Der Geschäftsführer sagt: 'Unser größtes Problem ist, qualifizierte Fachkräfte zu finden.'",
-        "difficulty": "medium",
-        "source": "TELC B2"
-      }
+    "teil2": [
+      {"id": "H2_001", "text": "Sie hören ein längeres Gespräch. Beantworten Sie die Fragen.", "question": "Wer ist die Person?", "options": ["Ein Kunde", "Ein Angestellter", "Ein Chef"], "answer": "Ein Kunde", "explanation": "Die Person bestellt etwas und stellt Fragen wie ein Kunde.", "time": 30}
     ],
-    "hard": [
-      {
-        "id": "H_H_001",
-        "passage": "Sie hören eine Diskussion zwischen zwei Geschäftsleuten über eine mögliche Fusion.",
-        "text": "Welche Bedenken gibt es bezüglich der Fusion?",
-        "options": [
-          "Zu viele Redundanzen und mögliche Entlassungen",
-          "Unterschiedliche Unternehmenskulturen",
-          "Finanzielle Instabilität"
-        ],
-        "answer": "Zu viele Redundanzen und mögliche Entlassungen",
-        "explanation": "Eine Person sagt: 'Meine größte Sorge ist, dass es zu viele doppelte Positionen gibt und wir werden wahrscheinlich viele Mitarbeiter verlieren.'",
-        "difficulty": "hard",
-        "source": "TELC B2"
-      }
+    "teil3": [
+      {"id": "H3_001", "text": "Sie hören ein Telefongespräch. Ergänzen Sie die Informationen.", "question": "Was möchte die Person?", "options": ["Einen Termin machen", "Ein Buch kaufen", "Eine Reservierung stornieren"], "answer": "Einen Termin machen", "explanation": "Im Gespräch wird ein Termin vereinbart.", "time": 30}
+    ],
+    "teil4": [
+      {"id": "H4_001", "text": "Sie hören einen Radiobericht. Wählen Sie die richtige Antwort.", "question": "Um welches Thema geht es?", "options": ["Umweltschutz", "Sportereignis", "Kulturveranstaltung"], "answer": "Umweltschutz", "explanation": "Der Bericht behandelt Umweltthemen.", "time": 30}
     ]
   },
-  "sprechen": {
-    "easy": [
-      {
-        "id": "SP_E_001",
-        "passage": "Präsentieren Sie über Ihr berufliches Leben und Ihre Ziele.",
-        "text": "Sprechen Sie 2-3 Minuten über Ihren idealen Arbeitsplatz. Nennen Sie: physische Umgebung, Kollegialität, Work-Life-Balance, Benefits.",
-        "options": null,
-        "answer": "Sollte enthalten: Klare Beschreibung der Arbeitsumgebung, positive Kollegendynamik, flexible Arbeitszeiten, Wellness-Programme. Natürliche Rede ohne Auswendiglernen.",
-        "explanation": "Grundlegende Präsentation. Struktur: Einleitung, entwickeln Sie jede Kategorie mit Beispielen, Schluss.",
-        "difficulty": "easy",
-        "source": "TELC B2"
-      },
-      {
-        "id": "SP_E_002",
-        "passage": "Sprechen Sie über ein persönliches Thema.",
-        "text": "Beschreiben Sie ein Hobby oder Interesse. Nennen Sie: was es ist, warum es Ihnen gefällt, wie oft Sie es machen, welche Fähigkeiten Sie entwickelt haben. (2-3 Minuten)",
-        "options": null,
-        "answer": "Sollte enthalten: Hobby-Identifikation, 2-3 Gründe warum Sie es mögen, Häufigkeit, spezifische Fähigkeiten erworben.",
-        "explanation": "Persönliches Thema für natürliches Sprechen. Sprechen Sie authentisch und zeigen Sie Begeisterung.",
-        "difficulty": "easy",
-        "source": "TELC B2"
-      }
+  "horen_und_schreiben": {
+    "teil1": [
+      {"id": "HS1_001", "text": "Sie hören eine Durchsage. Ergänzen Sie die fehlenden Informationen.", "question": "Wann fährt der Zug ab?", "options": ["14:30 Uhr", "15:30 Uhr", "16:30 Uhr"], "answer": "15:30 Uhr", "explanation": "In der Durchsage wird die Abfahrtszeit angekündigt.", "time": 30}
     ],
-    "medium": [
-      {
-        "id": "SP_M_001",
-        "passage": "Analysieren Sie eine Geschäftsherausforderung aus Ihrem Bereich.",
-        "text": "Präsentieren Sie: die Herausforderung, aktuelle Lösungen, Einschränkungen, Ihre Verbesserungen. (3-4 Minuten)",
-        "options": null,
-        "answer": "Sollte enthalten: Problemdefinition mit Kontext, 2-3 bestehende Ansätze, spezifische Schwachstellen, detailliertes Verbesserungsvorhaben.",
-        "explanation": "Erfordert kritische Analyse. Zeigen Sie: Verständnis, ehrliche Evaluierung, praktische Verbesserungen.",
-        "difficulty": "medium",
-        "source": "TELC B2"
-      }
+    "teil2": [
+      {"id": "HS2_001", "text": "Sie hören eine Ansage. Notieren Sie die wichtigen Informationen.", "question": "Wo findet das Treffen statt?", "options": ["Im Büro", "Im Restaurant", "Im Hotel"], "answer": "Im Hotel", "explanation": "In der Ansage wird der Ort des Treffens genannt.", "time": 30}
+    ]
+  },
+  "sprachbausteine": {
+    "teil1": [
+      {"id": "SB1_001", "passage": "Hallo Maria!\nIch _____ (1) dir schreiben, weil ich eine wichtige Nachricht habe. Nächste Woche _____ (2) ich eine neue Stelle anfangen.", "text": "Ergänzen Sie die Lücke (1):", "options": ["möchte", "muß", "kann"], "answer": "möchte", "explanation": "Das Verb 'möchte' passt grammatikalisch und semantisch.", "time": 15}
     ],
-    "hard": [
-      {
-        "id": "SP_H_001",
-        "passage": "Analysieren Sie Trends in Ihrem Fachgebiet und ihre zukünftigen Auswirkungen.",
-        "text": "Präsentieren Sie Trends und ihre Implikationen. Nennen Sie: aktuelle Trends (2-3), Daten, Zukunftsszenario (5-10 Jahre), strategische Implikationen. (4-5 Minuten)",
-        "options": null,
-        "answer": "Sollte enthalten: Spezifische Trends mit Daten, Analyse von Treibern, Szenario-Projektion, Implikationen für Stakeholder, Anerkennung von Unsicherheit.",
-        "explanation": "Future-fokussiert. Zeigen Sie: Kenntnis der aktuellen Lage, logische Progression, Anerkennung von Komplexität.",
-        "difficulty": "hard",
-        "source": "TELC B2"
-      }
+    "teil2": [
+      {"id": "SB2_001", "passage": "Der Kunde _____ (4) sich über den Service beschwert. Die Mitarbeiterin _____ (5) eine Lösung _____ (6). Am Ende _____ (7) der Kunde zufrieden.", "text": "Ergänzen Sie die Lücke (4):", "options": ["hatte", "hat", "ist"], "answer": "hat", "explanation": "Das Perfekt mit 'hat' ist hier korrekt.", "time": 15}
+    ],
+    "meinung": [
+      {"id": "SBM_001", "passage": "Thema: 'Homeoffice ist besser als Arbeit im Büro'\nSchreiben Sie Ihre Meinung dazu (60-80 Wörter).\nArgumentieren Sie mit mindestens zwei Beispielen.", "text": "Ihre Meinung zum Thema Homeoffice", "options": [], "answer": "Individuelle Antwort", "explanation": "Dies ist eine Meinungsaufgabe. Die Antwort wird bewertet nach: Argumentation, Grammatik und Wortschatz.", "time": 15}
+    ]
+  },
+  "mundlich": {
+    "teil1": [
+      {"id": "M1_001", "topic": "Selbstvorstellung", "question": "Stellen Sie sich vor! Sagen Sie:\n- Ihren Namen\n- Wo Sie herkommen\n- Was Sie beruflich machen", "time": 2}
+    ],
+    "teil2": [
+      {"id": "M2_001", "topic": "Gespräch über ein Thema", "question": "Sprechen Sie über folgendes Thema:\n'Welchen Beruf möchten Sie später haben und warum?'", "time": 2}
+    ],
+    "teil3": [
+      {"id": "M3_001", "topic": "Dialog mit dem Prüfer", "question": "Der Prüfer stellt Ihnen Fragen.\nAntworten Sie mündlich auf die Fragen.", "time": 2}
     ]
   }
 }

@@ -19,7 +19,7 @@
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
         }
 
@@ -33,11 +33,6 @@
         .header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
-        }
-
-        .header p {
-            font-size: 1.1em;
-            opacity: 0.9;
         }
 
         .controls {
@@ -130,6 +125,30 @@
             font-weight: bold;
         }
 
+        .time-badge.oral {
+            background-color: #e74c3c;
+        }
+
+        .timer-display {
+            background-color: #f39c12;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            display: none;
+        }
+
+        .timer-display.active {
+            display: inline-block;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
         .question {
             margin: 25px 0;
             padding: 15px;
@@ -199,6 +218,17 @@
             font-size: 1.2em;
         }
 
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #999;
+        }
+
+        .empty-state p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
         @media print {
             body {
                 background: white;
@@ -213,37 +243,52 @@
             }
         }
 
-        .empty-state {
-            text-align: center;
-            padding: 60px 20px;
+        .teil-label {
             color: #999;
+            font-size: 0.9em;
+            font-weight: normal;
+            margin-left: 10px;
         }
 
-        .empty-state p {
-            font-size: 1.1em;
-            margin-bottom: 20px;
-        }
-
-        .tabs {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
-
-        .tab-btn {
-            background-color: #e0e0e0;
-            color: #333;
-            padding: 8px 16px;
-            border: none;
+        .timer-section {
+            background-color: #fff3cd;
+            padding: 15px;
             border-radius: 4px;
-            cursor: pointer;
-            font-size: 14px;
+            margin: 15px 0;
+            text-align: center;
+            display: none;
         }
 
-        .tab-btn.active {
-            background-color: #667eea;
-            color: white;
+        .timer-section.active {
+            display: block;
+        }
+
+        .timer-section h4 {
+            margin-bottom: 10px;
+            color: #856404;
+        }
+
+        .timer-countdown {
+            font-size: 2em;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+
+        .timer-button {
+            background-color: #e74c3c;
+            margin-top: 10px;
+        }
+
+        .timer-button:hover {
+            background-color: #c0392b;
+        }
+
+        .timer-button.stop {
+            background-color: #27ae60;
+        }
+
+        .timer-button.stop:hover {
+            background-color: #229954;
         }
     </style>
 </head>
@@ -272,8 +317,8 @@
 
     <script>
         let questionsData = null;
+        let oralTimers = {};
 
-        // Load questions on page load
         async function loadQuestions() {
             try {
                 const response = await fetch('./questions.json');
@@ -282,6 +327,44 @@
                 console.error('Error loading questions:', error);
                 document.getElementById('examContainer').innerHTML = '<div class="empty-state"><p>❌ Fehler beim Laden der Fragen</p></div>';
             }
+        }
+
+        function getRandomQuestion(array) {
+            if (!array || array.length === 0) return null;
+            return array[Math.floor(Math.random() * array.length)];
+        }
+
+        function startOralTimer(sectionId) {
+            let timeLeft = 120;
+            const timerDisplay = document.getElementById(`timer-${sectionId}`);
+            const button = document.getElementById(`timer-btn-${sectionId}`);
+
+            if (oralTimers[sectionId]) {
+                clearInterval(oralTimers[sectionId]);
+                oralTimers[sectionId] = null;
+                button.textContent = '⏱️ Timer starten';
+                button.classList.remove('stop');
+                timerDisplay.parentElement.classList.remove('active');
+                return;
+            }
+
+            timerDisplay.parentElement.classList.add('active');
+            button.textContent = '⏱️ Timer stoppen';
+            button.classList.add('stop');
+
+            oralTimers[sectionId] = setInterval(() => {
+                timeLeft--;
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                timerDisplay.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+
+                if (timeLeft <= 0) {
+                    clearInterval(oralTimers[sectionId]);
+                    oralTimers[sectionId] = null;
+                    button.textContent = '⏱️ Zeit abgelaufen!';
+                    button.disabled = true;
+                }
+            }, 1000);
         }
 
         function generateNewExam() {
@@ -303,71 +386,83 @@
             </div>
             `;
 
-            // Generate sections
             const sections = [
-                { key: 'lesen', title: 'LESEN', time: 45, count: 5 },
-                { key: 'schreiben', title: 'SCHREIBEN', time: 60, count: 2 },
-                { key: 'horen', title: 'HÖREN', time: 30, count: 3 },
-                { key: 'sprechen', title: 'SPRECHEN', time: 15, count: 1 }
+                { key: 'lesen', title: 'LESEN', time: 45, type: 'regular' },
+                { key: 'lesen_und_schreiben', title: 'LESEN UND SCHREIBEN', time: 60, type: 'regular' },
+                { key: 'horen', title: 'HÖREN', time: 30, type: 'regular' },
+                { key: 'horen_und_schreiben', title: 'HÖREN UND SCHREIBEN', time: 30, type: 'regular' },
+                { key: 'sprachbausteine', title: 'SPRACHBAUSTEINE', time: 15, type: 'regular' },
+                { key: 'mundlich', title: 'MÜNDLICH PRÜFUNG', time: 2, type: 'oral' }
             ];
 
             sections.forEach(section => {
                 const sectionData = questionsData[section.key];
                 if (!sectionData) return;
 
-                // Select balanced questions
-                const difficulties = ['easy', 'medium', 'hard'];
-                const selectedQuestions = [];
-
-                difficulties.forEach(difficulty => {
-                    const questions = sectionData[difficulty] || [];
-                    if (questions.length > 0) {
-                        const randomQuestion = questions[Math.floor(Math.random() * questions.length)];
-                        selectedQuestions.push(randomQuestion);
-                    }
-                });
-
-                // Shuffle and limit
-                selectedQuestions.sort(() => Math.random() - 0.5);
-                const questionsForSection = selectedQuestions.slice(0, section.count);
-
                 html += `
                 <div class="section">
                     <div class="section-header">
                         <h3>${section.title}</h3>
-                        <div class="time-badge">⏱️ ${section.time} Min.</div>
+                        <div class="time-badge ${section.type === 'oral' ? 'oral' : ''}">⏱️ ${section.time} Min.</div>
                     </div>
                 `;
 
-                questionsForSection.forEach((question, index) => {
-                    html += `<div class="question">`;
-                    html += `<div class="question-number">Aufgabe ${index + 1}</div>`;
-
-                    if (question.passage) {
-                        html += `<div class="passage">${question.passage}</div>`;
-                    }
-
-                    html += `<div class="question-text">${question.text}</div>`;
-
-                    if (question.options && question.options.length > 0) {
-                        html += `<div class="options">`;
-                        question.options.forEach((option, optIndex) => {
-                            html += `<div class="option">(${String.fromCharCode(97 + optIndex)}) ${option}</div>`;
-                        });
-                        html += `</div>`;
-                    }
-
-                    if (showAnswers && question.answer) {
+                if (section.type === 'oral') {
+                    const teile = Object.keys(sectionData);
+                    teile.forEach((teil, teilIndex) => {
+                        const sectionId = `oral-${section.key}-${teilIndex}`;
                         html += `
-                        <div class="answer-key">
-                            <strong>Antwort:</strong> ${question.answer}<br>
-                            <strong>Erklärung:</strong> ${question.explanation || 'Siehe Lösungsschlüssel'}
+                        <div class="question">
+                            <div class="question-number">Teil ${teilIndex + 1}: ${sectionData[teil][0].topic}</div>
+                            <div class="question-text">${sectionData[teil][0].question}</div>
+                            <div class="timer-section" id="timer-${sectionId}">
+                                <h4>⏱️ Sprechzeit: 2 Minuten</h4>
+                                <div class="timer-countdown">2:00</div>
+                                <button class="timer-button" id="timer-btn-${sectionId}" onclick="startOralTimer('${sectionId}')">⏱️ Timer starten</button>
+                            </div>
                         </div>
                         `;
-                    }
+                    });
+                } else {
+                    const teile = Object.keys(sectionData);
+                    let questionCounter = 1;
 
-                    html += `</div>`;
-                });
+                    teile.forEach(teil => {
+                        const questions = sectionData[teil];
+                        if (questions && questions.length > 0) {
+                            const question = questions[Math.floor(Math.random() * questions.length)];
+
+                            html += `<div class="question">`;
+                            html += `<div class="question-number">Aufgabe ${questionCounter} <span class="teil-label">(${teil})</span></div>`;
+
+                            if (question.passage) {
+                                html += `<div class="passage">${question.passage}</div>`;
+                            }
+
+                            html += `<div class="question-text">${question.text}</div>`;
+
+                            if (question.options && question.options.length > 0) {
+                                html += `<div class="options">`;
+                                question.options.forEach((option, optIndex) => {
+                                    html += `<div class="option">(${String.fromCharCode(97 + optIndex)}) ${option}</div>`;
+                                });
+                                html += `</div>`;
+                            }
+
+                            if (showAnswers && question.answer) {
+                                html += `
+                                <div class="answer-key">
+                                    <strong>Antwort:</strong> ${question.answer}<br>
+                                    <strong>Erklärung:</strong> ${question.explanation || 'Siehe Lösungsschlüssel'}
+                                </div>
+                                `;
+                            }
+
+                            html += `</div>`;
+                            questionCounter++;
+                        }
+                    });
+                }
 
                 html += `</div>`;
             });
@@ -381,7 +476,6 @@
             document.getElementById('examContainer').innerHTML = html;
         }
 
-        // Load questions when page loads
         loadQuestions();
     </script>
 </body>
