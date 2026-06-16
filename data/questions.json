@@ -3,202 +3,190 @@
     "easy": [
       {
         "id": "L_E_001",
-        "text": "You read an online article about summer internships. Who is looking for an internship position?",
-        "options": [
-          "A teacher who wants to improve their English",
-          "A student who wants to gain work experience",
-          "A professional changing careers"
-        ],
-        "answer": "B",
-        "explanation": "The article explicitly mentions 'students' seeking internship opportunities to gain professional experience. This is a straightforward reading comprehension task requiring you to identify the main subject of the article.",
+        "section_context": "Lesen Sie die fünf Personen (1-5) und die acht Artikel (a-h). Welcher Artikel passt zu welcher Person?",
+        "passage": "PERSONEN:\n1. Laura möchte während des Studiums Berufserfahrung sammeln.\n2. Igor hat Familie und möchte im europäischen Ausland arbeiten.\n3. Jens interessiert sich für das Thema Umweltschutz in Unternehmen.\n4. Jasmin hat Probleme mit ihren Kollegen und braucht Hilfe.\n5. Somayeh ist Architektin und möchte ihr eigenes Architekturbüro eröffnen.\n\nARTIKEL:\na) Erfolgreich neue Wege gehen - Das Buch 'Mit Erfolg durchstarten' von Dr. Vera Baumgart richtet sich vor allem an Akademikerinnen, die erfolgreich ein eigenes Unternehmen aufbauen wollen.\nb) Ein grüner Arbeitsplatz - Die Firma Heller zeigt, wie Klimafreundlichkeit und Müllvermeidung auch bei einer Transport- und Logistikfirma funktioniert.\nc) Verändertes Kaufverhalten - Verbraucher greifen immer mehr zu regionalen und ökologisch angebauten Lebensmitteln.\nd) Jetzt im Buchhandel - Georg Könitz beschreibt, wie er von seinem Chef und Mitarbeitern schikaniert wurde und wie er den Teufelskreis durchbrach.\ne) Der richtige Praktikumsplatz - Ein Praktikum bietet tolle Möglichkeiten, den Berufsalltag kennenzulernen.\nf) Eine Erfolgsgeschichte - Rita Jäger erzählt im Interview, wie sie nach zwei abgebrochenen Lehren in einem Friseursalon ihr eigenes Geschäft aufbaute.\ng) Immobilienunternehmen expandiert - Die Frankfurter Immobilienfirma ImmoInvest expandiert nach Süd- und Osteuropa.\nh) Neue Broschüre - Informationen und Hilfestellungen zum Leben und Arbeiten in der EU.",
+        "text": "Welcher Artikel passt zu Laura (Person 1)?",
+        "options": ["a) Erfolgreich neue Wege gehen", "e) Der richtige Praktikumsplatz", "f) Eine Erfolgsgeschichte"],
+        "answer": "e) Der richtige Praktikumsplatz",
+        "explanation": "Artikel e spricht speziell von Praktikumsmöglichkeiten für Studenten, was perfekt zu Lauras Wunsch passt, während des Studiums Berufserfahrung zu sammeln.",
         "difficulty": "easy",
-        "source": "practice_test_1"
+        "source": "Einfach besser 400"
       },
       {
         "id": "L_E_002",
-        "text": "According to the company brochure, what is the weekly working time for full-time positions?",
-        "options": [
-          "35 hours",
-          "38.5 hours",
-          "40 hours"
-        ],
-        "answer": "B",
-        "explanation": "The document clearly states '38.5 Stunden' (38.5 hours) as the standard working week. This tests basic information extraction from official documents.",
+        "passage": "BETRIEBSSPORT\nDie Gesundheit unserer Mitarbeiter liegt uns sehr am Herzen. Deshalb möchten wir Sie einladen, an unserem kostenlosen Betriebssportprogramm teilzunehmen. In Zusammenarbeit mit dem Städtischen Sportverein bieten wir Ihnen die Gelegenheit, regelmäßig etwas für Ihre Fitness zu tun. Im beigelegten Programmheft finden Sie alle wichtigen Informationen zu den aktuellen Kursangeboten, Trainingszeiten und Veranstaltungsorten.\n\nWeitere Hinweise:\nIn den Mannschaftssportarten Tischtennis und Fußball besteht die Möglichkeit, neben dem Training auch an Turnieren mit anderen Firmen-Teams teilzunehmen.\n\nNeu und noch nicht im Programmheft enthalten ist der Kurs 'Yoga in der Mittagspause', der ab 15. Mai montags und mittwochs von 12:30 bis 13:15 Uhr stattfindet.",
+        "text": "Im Programmheft erfährt man, wo der Kurs 'Yoga in der Mittagspause' stattfindet. Ist das richtig oder falsch?",
+        "options": ["Richtig", "Falsch"],
+        "answer": "Falsch",
+        "explanation": "Der Text sagt deutlich: 'Neu und noch NICHT im Programmheft enthalten ist der Kurs Yoga in der Mittagspause'. Also ist die Aussage falsch.",
         "difficulty": "easy",
-        "source": "practice_test_2"
+        "source": "Einfach besser 400"
       },
       {
         "id": "L_E_003",
-        "text": "What sport is mentioned as a new course that hasn't appeared in the program guide yet?",
-        "options": [
-          "Football",
-          "Table tennis",
-          "Yoga during lunch break"
-        ],
-        "answer": "C",
-        "explanation": "The text states 'Neu und noch nicht im Programmheft enthalten ist der Kurs Yoga in der Mittagspause' (New and not yet in the program guide is the Yoga during lunch break course).",
+        "passage": "ARBEITSZEIT- UND ÜBERSTUNDENREGELUNG\nDie wöchentliche Arbeitszeit bei einer Vollzeitstelle beträgt 38,5 Stunden. Die Arbeitstage sind in der Regel Montag bis Freitag. Bei Bedarf können auch Überstunden sowie Samstagsarbeit erforderlich sein. Dies muss der Arbeitgeber aber spätestens fünf Werktage im Voraus ankündigen.",
+        "text": "Wie viele Stunden pro Woche muss man bei einer Vollzeitstelle arbeiten?",
+        "options": ["35 Stunden", "38,5 Stunden", "40 Stunden"],
+        "answer": "38,5 Stunden",
+        "explanation": "Der Text sagt klar: 'Die wöchentliche Arbeitszeit bei einer Vollzeitstelle beträgt 38,5 Stunden.'",
         "difficulty": "easy",
-        "source": "practice_test_2"
+        "source": "Einfach besser 400"
       },
       {
         "id": "L_E_004",
-        "text": "According to the text, when must the employer announce Saturday work?",
-        "options": [
-          "One week in advance",
-          "Five working days in advance",
-          "On short notice"
-        ],
-        "answer": "B",
-        "explanation": "The document clearly states 'spätestens fünf Werktage im Voraus' (at the latest five working days in advance).",
+        "passage": "PAUSEN\nBei einer Arbeitszeit von über sechs Stunden muss spätestens nach vier Stunden eine 30-minütige Pause eingelegt werden. Diese 30 Minuten können auch in zwei 15-Minuten-Blöcke aufgeteilt werden. Ab neun Stunden Arbeitszeit haben die Arbeitnehmerinnen und Arbeitnehmer Anspruch auf 45 Minuten Pause.",
+        "text": "Bei einer Arbeitszeit von über 6 Stunden, wann muss eine Pause gemacht werden?",
+        "options": ["Nach 2 Stunden", "Nach 4 Stunden", "Nach 5 Stunden"],
+        "answer": "Nach 4 Stunden",
+        "explanation": "Der Text sagt: 'Bei einer Arbeitszeit von über sechs Stunden muss spätestens nach VIER Stunden eine 30-minütige Pause eingelegt werden.'",
         "difficulty": "easy",
-        "source": "practice_test_2"
+        "source": "Einfach besser 400"
       },
       {
         "id": "L_E_005",
-        "text": "Which person is interested in environmental protection in business?",
-        "options": [
-          "Laura",
-          "Igor",
-          "Jens"
-        ],
-        "answer": "C",
-        "explanation": "The matching exercise states 'Jens interessiert sich für das Thema Umweltschutz in Unternehmen' (Jens is interested in the topic of environmental protection in companies).",
+        "passage": "ZEITERFASSUNG\nDie Zeitkarte ist außerdem Ihr Zahlungsmittel in der Kantine und auch Ihre Zugangskarte zu den Labors und Umkleideräumen. Daher ist sie personalisiert. Bitte stellen Sie uns dafür ein aktuelles Passfoto zur Verfügung.",
+        "text": "Die Zeitkarte hat mehr als eine Funktion. Ist das richtig oder falsch?",
+        "options": ["Richtig", "Falsch"],
+        "answer": "Richtig",
+        "explanation": "Die Zeitkarte hat mindestens 3 Funktionen: 1. Erfassung der Arbeitszeit, 2. Zahlungsmittel in der Kantine, 3. Zugangskarte zu Labors und Umkleideräumen.",
         "difficulty": "easy",
-        "source": "practice_test_3"
+        "source": "Einfach besser 400"
       }
     ],
     "medium": [
       {
         "id": "L_M_001",
-        "text": "Read the company information. According to the text, what advantage does the company's flexibility offer employees during break times?",
+        "passage": "MITARBEITER-VORTEILE\nDie Mitarbeiterinnen und Mitarbeiter haben folgende Möglichkeiten:\n- Teilnahme am kostenlosen Betriebssportprogramm\n- Möglichkeit an Turnieren mit anderen Firmen-Teams teilzunehmen (Tischtennis, Fußball)\n- Einige Kurse müssen selbst bezahlt werden\n- Trainingszeiten nach Arbeit sind nicht möglich",
+        "text": "Was ist NICHT richtig über die Mitarbeiter-Vorteile?",
         "options": [
-          "They can take breaks whenever they want",
-          "They can split a 30-minute break into two 15-minute blocks",
-          "They don't need to take breaks"
+          "Sie dürfen nur nach der Arbeit trainieren",
+          "Sie können an Wettkämpfen teilnehmen",
+          "Alle Kurse sind kostenlos"
         ],
-        "answer": "B",
-        "explanation": "The document states 'Diese 30 Minuten können auch in zwei 15-Minuten-Blöcke aufgeteilt werden' (These 30 minutes can also be split into two 15-minute blocks). This requires understanding specific details within a longer paragraph.",
+        "answer": "Sie dürfen nur nach der Arbeit trainieren",
+        "explanation": "Das ist falsch. Der Text sagt, dass das Sportprogramm WÄHREND der Arbeitszeit stattfindet, nicht nur danach.",
         "difficulty": "medium",
-        "source": "practice_test_2"
+        "source": "Einfach besser 400"
       },
       {
         "id": "L_M_002",
-        "text": "What is the purpose of the employee ID card in the company described?",
-        "options": [
-          "Only for tracking work hours",
-          "Only for accessing restricted areas",
-          "For multiple purposes: time tracking, payment, and access"
-        ],
-        "answer": "C",
-        "explanation": "The text mentions three uses: 'Die Zeitkarte ist außerdem Ihr Zahlungsmittel in der Kantine und auch Ihre Zugangskarte zu den Labors und Umkleideräumen' (The time card is also your payment method in the canteen and your access card to the labs and changing rooms).",
+        "passage": "KERNARBEITSZEIT\nWir haben in unserem Unternehmen flexible Arbeitszeiten. Die regulären Betriebszeiten sind von 7:30 bis 18:00 Uhr. Während der Kernarbeitszeit von 9:30 bis 15:00 müssen alle Mitarbeiterinnen und Mitarbeiter anwesend sein.",
+        "text": "Was ist die Kernarbeitszeit?",
+        "options": ["7:30 bis 18:00 Uhr", "9:30 bis 15:00 Uhr", "8:00 bis 17:00 Uhr"],
+        "answer": "9:30 bis 15:00 Uhr",
+        "explanation": "Der Text sagt deutlich: 'Während der Kernarbeitszeit von 9:30 bis 15:00 müssen alle Mitarbeiter anwesend sein.'",
         "difficulty": "medium",
-        "source": "practice_test_2"
+        "source": "Einfach besser 400"
       },
       {
         "id": "L_M_003",
-        "text": "Which article matches Igor's need for work experience in Europe?",
+        "passage": "ARBEITSVERTRAG\nDer Arbeitsvertrag regelt die Bedingungen Ihrer Beschäftigung. Überstunden werden grundsätzlich nicht ausbezahlt, sie können aber in Freizeit umgewandelt werden. Dies muss von der Teamleitung schriftlich genehmigt werden.",
+        "text": "Wie werden Überstunden normalerweise bezahlt?",
         "options": [
-          "The book about entrepreneurship",
-          "The brochure about living and working in the EU",
-          "The career article for biologists"
+          "Mit zusätzlichem Geld",
+          "Mit zusätzlichen freien Tagen (wenn genehmigt)",
+          "Überstunden werden nicht akzeptiert"
         ],
-        "answer": "B",
-        "explanation": "Igor wants to work in Europe with family. The text mentions 'unsere neue Broschüre bietet ausführliche Informationen und Hilfestellungen zum Leben und Arbeiten in der EU' (our new brochure offers detailed information and assistance on living and working in the EU).",
+        "answer": "Mit zusätzlichen freien Tagen (wenn genehmigt)",
+        "explanation": "Der Text sagt: 'Überstunden werden grundsätzlich nicht ausbezahlt, sie können aber in Freizeit umgewandelt werden. Dies muss von der Teamleitung schriftlich genehmigt werden.'",
         "difficulty": "medium",
-        "source": "practice_test_3"
+        "source": "Einfach besser 400"
       },
       {
         "id": "L_M_004",
-        "text": "What does the text imply about overtime payment policy?",
-        "options": [
-          "Overtime is always paid in addition to salary",
-          "Overtime cannot be taken as time off",
-          "Employees can choose between payment or time off if approved by management"
-        ],
-        "answer": "C",
-        "explanation": "The text states 'Überstunden werden grundsätzlich nicht ausbezahlt, sie können aber in Freizeit umgewandelt werden. Dies muss von der Teamleitung schriftlich genehmigt werden.' (Overtime is generally not paid out, but can be converted into free time. This must be approved in writing by team management.)",
+        "passage": "URLAUBSPLANUNG\nDie Urlaubsplanung muss bis zum 31. März abgeschlossen sein. Besonders wichtig: Wie immer werden die Urlaubswünsche von Eltern schulpflichtiger Kinder bevorzugt berücksichtigt. Pro Team sollten nie mehr als zwei Mitarbeiter zeitgleich abwesend sein.",
+        "text": "In den einzelnen Teams dürfen wie viele Mitarbeiter gleichzeitig in Urlaub gehen?",
+        "options": ["Einer", "Zwei", "Drei"],
+        "answer": "Zwei",
+        "explanation": "Der Text sagt: 'Pro Team sollten NIEMALS mehr als ZWEI Mitarbeiter zeitgleich abwesend sein.' Das bedeutet, maximal zwei dürfen gleichzeitig weg sein.",
         "difficulty": "medium",
-        "source": "practice_test_2"
+        "source": "Einfach besser 400"
       },
       {
         "id": "L_M_005",
-        "text": "According to the text, what two aspects of professional life can affect career opportunities?",
+        "passage": "GESCHÄFTSBERICHT\nDas vergangene Geschäftsjahr konnte mit einem Umsatzplus von ca. 800.000 Euro abgeschlossen werden. Das positive Ergebnis ist darauf zurückzuführen, dass die neu eingeführten Gesichtspflegeprodukte von den Kundinnen gut angenommen wurden. Die bestehende Kosmetiklinie 'GreenBeauty' wird um die Produktgruppe Körperpflege erweitert.",
+        "text": "Was stimmt über das Unternehmen?",
         "options": [
-          "Age and language skills",
-          "Education and hobbies",
-          "Experience and location"
+          "Es hatte ein schwaches Jahr",
+          "Es war im letzten Jahr erfolgreich",
+          "Es schließt Produktlinien"
         ],
-        "answer": "B",
-        "explanation": "The text discusses how 'Ausbildung und Qualifikation sind in erster Linie wichtig' (Education and qualifications are primarily important) AND 'auch, welche Hobbys eine Person hat, kann Auskunft darüber geben, ob sie zum Unternehmen passt' (also what hobbies a person has can indicate whether they fit the company).",
+        "answer": "Es war im letzten Jahr erfolgreich",
+        "explanation": "Der Text sagt: 'das vergangene Geschäftsjahr mit einem Umsatzplus von ca. 800.000 Euro abgeschlossen werden konnte.' Das zeigt Erfolg.",
         "difficulty": "medium",
-        "source": "practice_test_1"
+        "source": "Einfach besser 400"
       }
     ],
     "hard": [
       {
         "id": "L_H_001",
-        "text": "Considering both the job advertisement and the workplace culture description, what can be inferred about why environmental consciousness matters to this company?",
+        "passage": "KUNDENSERVICE-BERICHT\nIn der vergangenen Woche ist die Telefonanlage im Kundenservice für zwei Tage lang ausgefallen. Die Servicenummern waren 48 Stunden lang nicht erreichbar. Fragen von Kunden konnten nur online gestellt und beantwortet werden. Dies führte zu einer Welle von Kundenbeschwerden. Der Defekt ist mittlerweile behoben und das Servicecenter kann wieder wie gewohnt arbeiten.",
+        "text": "Was ist mit dem Kundenservice passiert?",
         "options": [
-          "It is required by law",
-          "It reflects company values and attracts like-minded employees",
-          "It is only a marketing strategy"
+          "Das Serviceteam hat sich beschwert",
+          "Die Telefonanlage war nicht erreichbar",
+          "Der Service ist komplett geschlossen"
         ],
-        "answer": "B",
-        "explanation": "The company emphasizes 'Klimafreundliche Energie und Müllvermeidung werden bei uns ganz großgeschrieben' (climate-friendly energy and waste avoidance are taken very seriously), and offers green workplace initiatives, suggesting genuine commitment beyond legal requirements.",
+        "answer": "Die Telefonanlage war nicht erreichbar",
+        "explanation": "Der Text sagt: 'die Telefonanlage im Kundenservice ausgefallen ist' und 'Die Servicenummern waren 48 Stunden lang nicht erreichbar.'",
         "difficulty": "hard",
-        "source": "practice_test_3"
+        "source": "Einfach besser 400"
       },
       {
         "id": "L_H_002",
-        "text": "The text mentions that employees must be present during 'Kernarbeitszeit.' What does this reveal about the company's management style?",
+        "passage": "SCHLIESSYSTEM\nMitte März wird im gesamten Unternehmen eine neue Schließanlage installiert. Der Zugang zu den Laboren funktioniert demnächst nur noch mittels eines Zahlencodes, den die Kollegen an der automatischen Eingangstür eingeben müssen. Nicht alle Kollegen brauchen Schlüssel, die überall schließen.",
+        "text": "Welche neue Sicherheitsmaßnahme wird eingeführt?",
         "options": [
-          "The company has no trust in employees",
-          "The company balances flexibility with accountability requirements",
-          "The company follows strict traditional working hours"
+          "Fingerabdruck-Scanner",
+          "Elektronische Zahlencodes für Laborzugang",
+          "Alle Türen werden verriegelt"
         ],
-        "answer": "B",
-        "explanation": "While the company offers 'flexible Arbeitszeiten' (flexible working hours) between 7:30-18:00, the mandatory 'Kernarbeitszeit von 9:30 bis 15:00' (core working hours) shows they balance employee flexibility with operational needs - a modern approach.",
+        "answer": "Elektronische Zahlencodes für Laborzugang",
+        "explanation": "Der Text sagt: 'Der Zugang zu den Laboren funktioniert demnächst nur noch mittels eines Zahlencodes, den die Kollegen an der automatischen Eingangstür eingeben müssen.'",
         "difficulty": "hard",
-        "source": "practice_test_2"
+        "source": "Einfach besser 400"
       },
       {
         "id": "L_H_003",
-        "text": "Based on the document structure and content, what can be inferred about the target audience of this welcome guide?",
+        "passage": "PARKPLATZ-PROBLEME\nIn letzter Zeit ist es häufiger vorgekommen, dass Autos auf dem Mitarbeiterparkplatz abgestellt wurden, die Kollegen gehören, die keine Parkkarte besitzen. Dadurch bekommen diejenigen, die bezahlt haben, oft keinen Parkplatz mehr. Die Schranke wird von Parkkarteninhabern für Kollegen ohne Berechtigung geöffnet.",
+        "text": "Was ist das Hauptproblem auf dem Parkplatz?",
         "options": [
-          "Only executive-level employees",
-          "Primarily new full-time employees joining the company",
-          "All employees including temporary staff"
+          "Der Parkplatz ist zu klein",
+          "Unbefugte parken dort ohne Genehmigung",
+          "Die Schranke funktioniert nicht"
         ],
-        "answer": "B",
-        "explanation": "The document is titled 'Willkommensmappe für neue Mitarbeiterinnen und Mitarbeiter' (welcome folder for new employees) and covers comprehensive HR policies suggesting it's designed for new staff orientation, particularly full-time positions given the detailed 'Vollzeitstelle' (full-time position) information.",
+        "answer": "Unbefugte parken dort ohne Genehmigung",
+        "explanation": "Das Problem ist, dass Mitarbeiter ohne Parkkarte von anderen Mitarbeitern hineingelassen werden, was zum Platzmangel führt.",
         "difficulty": "hard",
-        "source": "practice_test_2"
+        "source": "Einfach besser 400"
       },
       {
         "id": "L_H_004",
-        "text": "Which article best addresses the combined concerns of someone worried about workplace stress AND career advancement?",
+        "passage": "KONFLIKT-RESOLUTION\nJasmin hat Probleme mit ihren Kollegen und braucht Hilfe. Sie wurde von ihren Kollegen ausgegrenzt und schikaniert. Georg Könitz beschreibt in seinem Buch, wie er eine ähnliche Situation erlebt hat und wie er die Probleme gelöst hat.",
+        "text": "Welcher Artikel könnte Jasmin helfen?",
         "options": [
-          "The book about company culture and networking",
-          "The article about handling workplace bullying and recovery",
-          "The guide about environmental workplace setup"
+          "Ein grüner Arbeitsplatz",
+          "Jetzt im Buchhandel (Georg Könitz)",
+          "Neue Broschüre"
         ],
-        "answer": "B",
-        "explanation": "The text about Georg Könitz's book covers both stress (workplace mistreatment) and recovery/advancement (escaping the cycle), making it relevant to someone balancing mental health with professional growth.",
+        "answer": "Jetzt im Buchhandel (Georg Könitz)",
+        "explanation": "Das Buch von Georg Könitz beschreibt direkt, wie er mit Schikane und Ausgrenzung durch Kollegen umgegangen ist - genau was Jasmin erlebt.",
         "difficulty": "hard",
-        "source": "practice_test_3"
+        "source": "Einfach besser 400"
       },
       {
         "id": "L_H_005",
-        "text": "What organizational principle appears to guide the company's employee benefits structure?",
+        "passage": "UNTERNEHMENSSTRATEGIE\nDas Unternehmen expandiert nach Süd- und Osteuropa. In den letzten Jahren hat das Unternehmen hohe Gewinne erwirtschaftet und plant nun, außerhalb Deutschlands mehrere Niederlassungen zu gründen. Die Produkte sollen in naher Zukunft auch in Drogeriemärkten erhältlich sein.",
+        "text": "Was sind die nächsten Schritte des Unternehmens?",
         "options": [
-          "Minimizing company costs while meeting legal requirements",
-          "Comprehensive employee well-being covering health, work-life balance, and professional development",
-          "Offering competitive salaries as the primary benefit"
+          "Schließung von deutschen Standorten",
+          "Expansion ins Ausland und in neue Märkte",
+          "Reduktion des Produktangebots"
         ],
-        "answer": "B",
-        "explanation": "The company provides multiple benefit categories: health (Betriebssport/corporate sports), time management (flexible hours), legal support (workers' compensation), and development opportunities - indicating a holistic employee wellness philosophy.",
+        "answer": "Expansion ins Ausland und in neue Märkte",
+        "explanation": "Der Text sagt: 'expandiert nach Süd- und Osteuropa' und 'Produkte sollen auch in Drogeriemärkten erhältlich sein' - beides sind Expansionsmaßnahmen.",
         "difficulty": "hard",
-        "source": "practice_test_2"
+        "source": "Einfach besser 400"
       }
     ]
   },
@@ -206,142 +194,43 @@
     "easy": [
       {
         "id": "S_E_001",
-        "text": "Write a complaint letter about poor service at a restaurant (150-200 words). Include: what happened, when it happened, what you expect as resolution.",
+        "text": "Schreiben Sie eine formale E-Mail an Ihren neuen Chef, um sich vorzustellen (100-150 Wörter). Nennen Sie: Ihren Namen, wo Sie vorher gearbeitet haben, Ihre Qualifikationen.",
         "options": null,
-        "answer": "[Letter format with: Date, greeting, clear description of incident, specific complaints, request for compensation, formal closing]",
-        "explanation": "This is a basic complaint letter task. Key points: use formal letter format (Datum, Anrede), describe the problem clearly with dates, explain the impact, and state your expected resolution. Remember to maintain professional tone throughout.",
+        "answer": "Beispiel: Betreffzeile, formale Anrede 'Sehr geehrter/Sehr geehrte', Selbstvorstellung mit Name, vorherige Position und Unternehmen, Qualifikationen aufzählen, Freude ausdrücken die neue Stelle anzutreten, höfliche Grußformel (Mit freundlichen Grüßen)",
+        "explanation": "Formale Geschäftskommunikation. Struktur: Betreffzeile, formale Anrede, prägnante Selbstvorstellung, Qualifikationen, höflicher Abschluss.",
         "difficulty": "easy",
-        "source": "practice_test_1"
+        "source": "TELC B2"
       },
       {
         "id": "S_E_002",
-        "text": "Write a short email to your manager requesting a day off (50-100 words). Provide: reason, requested date, and offer a solution for work coverage.",
+        "text": "Schreiben Sie eine kurze Nachricht an einen Kollegen, um um Hilfe bei einem Projekt zu bitten (50-80 Wörter).",
         "options": null,
-        "answer": "[Email with: subject line, polite greeting, clear request with date, brief reason, coverage plan, professional closing]",
-        "explanation": "Simple professional communication. Key elements: direct request, specific date, reasonable explanation, and proactive solution (who will cover your work). Keep professional but friendly tone for email context.",
+        "answer": "Beispiel: Betreffzeile 'Frage zu Projekt X', höfliche Anrede (Liebe/Lieber), Grund der Anfrage, spezifische Bitte um Hilfe, kurze Dankbarkeit, ungezwungener Abschluss",
+        "explanation": "Informelle, aber professionelle Kommunikation. Sei direkt in deiner Frage und zeige Wertschätzung.",
         "difficulty": "easy",
-        "source": "practice_test_1"
-      },
-      {
-        "id": "S_E_003",
-        "text": "Write a thank you note to a colleague who helped you with a project (80-120 words). Mention: what they helped with, specific impact, and expression of gratitude.",
-        "options": null,
-        "answer": "[Note with: greeting, specific description of help given, concrete outcome/impact, warm thanks, professional closing]",
-        "explanation": "Building workplace relationships. Focus on: specific mention of what they did (not generic thanks), concrete example of how it helped, and sincere appreciation. This shows you noticed their effort.",
-        "difficulty": "easy",
-        "source": "practice_test_1"
-      },
-      {
-        "id": "S_E_004",
-        "text": "Write instructions for a simple workplace procedure (e.g., using the coffee machine, submitting expense reports - 120-150 words). Include: materials needed, steps in order, any important warnings.",
-        "options": null,
-        "answer": "[Instructions with: clear title, list of materials/requirements, numbered steps in logical order, any warnings in bold, brief conclusion]",
-        "explanation": "Technical writing for clarity. Key points: logical step sequence, present imperative tense ('Drücken Sie...'), clear numbering, explicit warnings about mistakes or hazards, simple direct language.",
-        "difficulty": "easy",
-        "source": "practice_test_2"
-      },
-      {
-        "id": "S_E_005",
-        "text": "Write a simple product review (100-150 words). Include: product name, positive and negative aspects, and a recommendation.",
-        "options": null,
-        "answer": "[Review with: product identification, 2-3 positive points, 1-2 areas for improvement, clear recommendation (recommend/don't recommend), rating/star system]",
-        "explanation": "Opinion writing with structure. Include balanced feedback: what works well, what could improve, and clear final recommendation. This demonstrates ability to write persuasively but fairly.",
-        "difficulty": "easy",
-        "source": "practice_test_2"
+        "source": "TELC B2"
       }
     ],
     "medium": [
       {
         "id": "S_M_001",
-        "text": "You ordered a product online that arrived damaged. Write a complaint letter to the company (180-250 words) requesting replacement or refund. Include: order number, description of damage, photos mentioned, timeline for resolution request.",
+        "text": "Sie haben ein Paket per Post erhalten, das beschädigt ist. Schreiben Sie einen Beschwerde-Brief an das Versandunternehmen (180-220 Wörter).",
         "options": null,
-        "answer": "[Formal complaint letter with: clear reference to order, specific damage description, evidence provided (photos), reference to consumer rights, specific resolution requested, deadline, professional but firm tone]",
-        "explanation": "Complex complaint requiring: factual detail (order number, damage specifics), reference to documentation (photos), consumer rights knowledge, and assertive but professional language. Demonstrate you've taken appropriate steps and expect resolution.",
+        "answer": "Beispiel: Formaler Aufbau, genaue Bestellnummer, detaillierte Schadenbeschreibung, Fotos erwähnen, konkrete Forderung (Ersatz/Rückerstattung), angemessene Frist setzen",
+        "explanation": "Beschwerdeschreiben erfordern: spezifische Details, sachlicher Ton (nicht emotional), klare Forderung, angemessene Frist.",
         "difficulty": "medium",
-        "source": "practice_test_2"
-      },
-      {
-        "id": "S_M_002",
-        "text": "Write a professional proposal email to your manager suggesting a new workplace initiative (200-280 words). Include: problem identified, your solution, benefits, implementation timeline, resource requirements.",
-        "options": null,
-        "answer": "[Email with: clear subject, problem statement with data/examples, detailed solution explanation, 3+ benefits listed, realistic timeline with milestones, resource/budget needs, call to action]",
-        "explanation": "Business persuasion requires: problem-solution structure, specific benefits (not vague), realistic planning, resource awareness, and clear next steps. Use data/examples to support your idea.",
-        "difficulty": "medium",
-        "source": "practice_test_2"
-      },
-      {
-        "id": "S_M_003",
-        "text": "You received negative feedback about your work performance. Write a response to HR (200-250 words) that: acknowledges the feedback, explains your perspective without being defensive, outlines steps for improvement.",
-        "options": null,
-        "answer": "[Response with: acknowledgment of feedback, brief non-defensive explanation, specific improvement plan (training, mentorship, timeline), commitment to change, professional tone]",
-        "explanation": "Professional maturity and accountability. Key balance: acknowledge valid points, clarify misunderstandings respectfully, and show concrete action plan. Avoid defensiveness but stand up for valid points.",
-        "difficulty": "medium",
-        "source": "practice_test_3"
-      },
-      {
-        "id": "S_M_004",
-        "text": "Write a formal letter requesting a meeting with your department director (150-220 words). Include: purpose of meeting, suggested topics, proposed dates/times, and rationale for the discussion.",
-        "options": null,
-        "answer": "[Formal letter with: respectful address, clear purpose statement, specific agenda items (3-4), realistic timing (not urgent), offered flexible date/time options, professional closing]",
-        "explanation": "Professional communication and time management. Show respect for hierarchy, clarity of purpose, prepared agenda, and flexibility. This demonstrates maturity and organizational skills.",
-        "difficulty": "medium",
-        "source": "practice_test_2"
-      },
-      {
-        "id": "S_M_005",
-        "text": "You want to negotiate working from home 2 days per week. Write a proposal to your manager (220-280 words) with: benefits for the company, your productivity plan, communication strategy, trial period suggestion.",
-        "options": null,
-        "answer": "[Proposal with: clear request, 2-3 company benefits (productivity, cost savings, employee retention), detailed WFH productivity plan, communication/availability strategy, specific trial period (e.g., 3 months), contingency plan]",
-        "explanation": "Persuasive negotiation focusing on mutual benefit. Emphasize company advantages, show detailed planning (not casual request), propose measurable trial period, address potential concerns (communication, productivity).",
-        "difficulty": "medium",
-        "source": "practice_test_3"
+        "source": "TELC B2"
       }
     ],
     "hard": [
       {
         "id": "S_H_001",
-        "text": "Write a detailed complaint regarding workplace discrimination that occurred over several months (300-350 words). Document incidents, impact on work environment, previous attempts to resolve, and formal resolution request with timeline.",
+        "text": "Ein Kunde hat sich beschwert, dass Ihr Unternehmen ein Service-Versprechen nicht eingehalten hat. Schreiben Sie einen Entschädigungs-Brief (300-350 Wörter).",
         "options": null,
-        "answer": "[Formal complaint with: chronological incident documentation (dates, witnesses, specifics), pattern analysis showing systematic issue, documented impact (performance, attendance, health), previous resolution attempts, formal request (investigation, corrective action), legal/HR process knowledge, professional but assertive tone, copy notifications]",
-        "explanation": "Complex formal complaint requiring legal awareness. Essential elements: detailed timeline, pattern documentation, evidence of attempts to resolve informally, specific requests, awareness of formal procedures, clear communication of seriousness and expectations.",
+        "answer": "Beispiel: Aufrichtige Entschuldigung, Verständnis für Frustration, genaue Analyse was falsch lief, konkrete Maßnahmen zur Vermeidung, spezifisches Entschädigungsangebot, Versicherung verbesserter Service",
+        "explanation": "Krisenmanagement. Sei ehrlich, übernehme Verantwortung, biete konkrete Lösungen an, nicht nur leere Entschuldigungen.",
         "difficulty": "hard",
-        "source": "practice_test_3"
-      },
-      {
-        "id": "S_H_002",
-        "text": "Write a position paper on a workplace policy you disagree with (320-380 words). Present: your position clearly, counterarguments and rebuttals, supporting evidence, alternative proposal, and implications for stakeholders.",
-        "options": null,
-        "answer": "[Position paper with: clear thesis statement, 2-3 strong supporting arguments with evidence/examples, acknowledgment of opposing view with respectful rebuttal, concrete alternative proposal with implementation details, consideration of stakeholder impact (employees, management, clients), professional analytical tone]",
-        "explanation": "Advanced persuasive writing requiring critical thinking. Show sophisticated argument: acknowledge valid counterpoints but refute respectfully, present evidence-based position, offer realistic alternatives. This demonstrates intellectual maturity and problem-solving beyond complaint.",
-        "difficulty": "hard",
-        "source": "practice_test_3"
-      },
-      {
-        "id": "S_H_003",
-        "text": "You're leaving your position. Write a resignation letter that is professional, gracious, and future-focused (250-300 words). Include: formal notice, gratitude for opportunities, transition plan, offer to help, positive reflection on experience.",
-        "options": null,
-        "answer": "[Resignation letter with: formal notice and last day (2 weeks standard), genuine gratitude with specific examples, detailed transition plan (documentation, training, timeline), offer of assistance after departure, positive reflection on learning/growth, warm professional closing]",
-        "explanation": "Exit communication requiring diplomacy and professionalism. Key considerations: proper notice period, authentic appreciation, practical transition details, maintain positive relationships (you may work with these people again), focus on growth rather than complaints.",
-        "difficulty": "hard",
-        "source": "practice_test_2"
-      },
-      {
-        "id": "S_H_004",
-        "text": "Write a detailed recommendation letter for a colleague being considered for promotion (320-380 words). Include: specific achievements and competencies, concrete examples, relevant skills for new role, growth trajectory, and conclusion affirming readiness.",
-        "options": null,
-        "answer": "[Recommendation with: clear statement of your relationship/qualification to recommend, specific achievements with metrics, 3-4 relevant competencies with concrete examples, direct connection between past performance and new role requirements, assessment of growth potential, strong affirming conclusion, professional tone showing credibility]",
-        "explanation": "High-stakes persuasive writing requiring credibility and specificity. Avoid generic praise; provide concrete examples with metrics, directly address how current strengths transfer to new role, demonstrate deep knowledge of candidate's capabilities.",
-        "difficulty": "hard",
-        "source": "practice_test_3"
-      },
-      {
-        "id": "S_H_005",
-        "text": "Write a feasibility analysis for a proposed company expansion into a new market (350-400 words). Analyze: market opportunity, competitive landscape, required resources, timeline, risks, and recommendation.",
-        "options": null,
-        "answer": "[Analysis with: market opportunity assessment with data, competitive analysis of 2-3 key competitors, resource requirements (capital, personnel, infrastructure), realistic timeline with milestones, identified risks with mitigation strategies, return on investment projection, clear recommendation (go/no-go) with justification, professional business writing style]",
-        "explanation": "Business analysis requiring strategic thinking and research awareness. Structure: opportunity + challenge analysis, resource realism, risk awareness, financial projection. Recommendation should be defensible based on analysis, not emotional preference.",
-        "difficulty": "hard",
-        "source": "practice_test_3"
+        "source": "TELC B2"
       }
     ]
   },
@@ -349,142 +238,42 @@
     "easy": [
       {
         "id": "H_E_001",
-        "text": "Listen to a job interview and select the job title being discussed. Options: Software Developer, Project Manager, Sales Representative",
-        "options": ["Software Developer", "Project Manager", "Sales Representative"],
-        "answer": "A",
-        "explanation": "The interviewer mentions 'software' and 'programming' multiple times, making the job title clear from context.",
+        "text": "Sie hören einen Dialog. Warum ist der Mitarbeiter zu spät gekommen?",
+        "options": ["Verkehrsstau", "Zahnarzttermin", "Auto-Problem"],
+        "answer": "Zahnarzttermin",
+        "explanation": "Der Mitarbeiter sagt im Dialog: 'Entschuldigen Sie, mein Zahnarzttermin hat länger gedauert als erwartet.'",
         "difficulty": "easy",
-        "source": "listening_practice_1"
-      },
-      {
-        "id": "H_E_002",
-        "text": "Listen to a conversation about vacation plans. Where does the person plan to go? Options: Italy, Greece, Spain",
-        "options": ["Italy", "Greece", "Spain"],
-        "answer": "B",
-        "explanation": "The speaker clearly says 'Ich fahre nach Griechenland' (I'm going to Greece) early in the conversation.",
-        "difficulty": "easy",
-        "source": "listening_practice_1"
-      },
-      {
-        "id": "H_E_003",
-        "text": "Listen to a phone call about a hotel reservation. Is the room confirmed for June 15th? Options: Yes, No, Need more information",
-        "options": ["Yes", "No", "Need more information"],
-        "answer": "A",
-        "explanation": "The receptionist confirms 'Ja, das Zimmer ist für den 15. Juni reserviert' (Yes, the room is reserved for June 15th).",
-        "difficulty": "easy",
-        "source": "listening_practice_2"
-      },
-      {
-        "id": "H_E_004",
-        "text": "Listen to a radio announcement about public transport. What is the delay time? Options: 10 minutes, 20 minutes, 30 minutes",
-        "options": ["10 minutes", "20 minutes", "30 minutes"],
-        "answer": "B",
-        "explanation": "The announcement states 'die U-Bahn hat eine Verspätung von 20 Minuten' (the subway is delayed 20 minutes).",
-        "difficulty": "easy",
-        "source": "listening_practice_2"
-      },
-      {
-        "id": "H_E_005",
-        "text": "Listen to a weather forecast. Will it rain tomorrow? Options: Yes, No, Maybe/Uncertain",
-        "options": ["Yes", "No", "Maybe/Uncertain"],
-        "answer": "A",
-        "explanation": "The weather reporter says 'Morgen wird es regnen' (Tomorrow it will rain) with certainty.",
-        "difficulty": "easy",
-        "source": "listening_practice_1"
+        "source": "TELC B2"
       }
     ],
     "medium": [
       {
         "id": "H_M_001",
-        "text": "Listen to a business presentation about quarterly sales. What was the main reason for the 15% increase? Options: New marketing campaign, Product improvements, Market expansion, All of the above",
-        "options": ["New marketing campaign", "Product improvements", "Market expansion", "All of the above"],
-        "answer": "D",
-        "explanation": "The presenter mentions three contributing factors: the new 'Marketingkampagne', 'verbesserte Produkte', and 'neue Märkte'. This requires integrating multiple pieces of information.",
+        "text": "Sie hören ein Interview mit einem Geschäftsführer. Was ist das Hauptproblem des Unternehmens?",
+        "options": [
+          "Zu viele Mitarbeiter",
+          "Mangel an qualifizierten Fachkräften",
+          "Zu hohe Produktionskosten"
+        ],
+        "answer": "Mangel an qualifizierten Fachkräften",
+        "explanation": "Der Geschäftsführer sagt: 'Unser größtes Problem ist, qualifizierte Fachkräfte zu finden. Der Arbeitsmarkt ist sehr angespannt.'",
         "difficulty": "medium",
-        "source": "listening_practice_3"
-      },
-      {
-        "id": "H_M_002",
-        "text": "Listen to an employee training session. What two actions must employees take regarding data security? Options: A) Password changes and access audits, B) Backups and encryption, C) Regular training and incident reporting",
-        "options": ["A) Password changes and access audits", "B) Backups and encryption", "C) Regular training and incident reporting"],
-        "answer": "A",
-        "explanation": "The trainer specifically discusses 'regelmäßige Passwortänderungen' and 'Sicherheitsüberprüfungen'. This requires listening for specific procedural requirements.",
-        "difficulty": "medium",
-        "source": "listening_practice_3"
-      },
-      {
-        "id": "H_M_003",
-        "text": "Listen to a discussion about a project delay. What are the two main obstacles mentioned? Options: Staff shortage and budget cuts, Technical issues and supplier delays, Unclear requirements and poor communication",
-        "options": ["Staff shortage and budget cuts", "Technical issues and supplier delays", "Unclear requirements and poor communication"],
-        "answer": "B",
-        "explanation": "The project manager discusses 'technische Probleme mit der Software' and 'Verzögerungen beim Lieferanten'. Requires identifying multiple causes from context.",
-        "difficulty": "medium",
-        "source": "listening_practice_3"
-      },
-      {
-        "id": "H_M_004",
-        "text": "Listen to a customer service call. Why does the customer want to return the product? And what solution do they ultimately accept?",
-        "options": ["Defect / replacement", "Wrong size / refund", "Missing parts / store credit"],
-        "answer": "A",
-        "explanation": "The customer explains the product 'funktioniert nicht richtig' (doesn't work properly), and the agent offers 'ein neues Produkt' (a replacement), which they accept. Requires understanding both problem and resolution.",
-        "difficulty": "medium",
-        "source": "listening_practice_2"
-      },
-      {
-        "id": "H_M_005",
-        "text": "Listen to a podcast about career development. The speaker mentions three strategies for advancement. Which one requires the most time investment?",
-        "options": ["Networking events", "Additional certifications", "Mentorship programs"],
-        "answer": "B",
-        "explanation": "While discussing certifications, the speaker emphasizes 'das erfordert Monate oder sogar Jahre der Vorbereitung' (requires months or even years of preparation), indicating highest time investment.",
-        "difficulty": "medium",
-        "source": "listening_practice_4"
+        "source": "TELC B2"
       }
     ],
     "hard": [
       {
         "id": "H_H_001",
-        "text": "Listen to a complex business negotiation between client and vendor. Identify: the initial price disagreement, the client's main concern, and the final compromise reached.",
-        "options": ["Vendor offered €500k, client wanted €300k, agreed at €350k", "Vendor offered €600k, client concerned about timeline, agreed with payment schedule", "Vendor offered €500k, client wanted quality guarantee, agreed with warranty extension"],
-        "answer": "C",
-        "explanation": "The vendor opens at '500.000 Euro', client insists on 'Qualitätsgarantie' (quality guarantee) as main concern, they compromise with extended 'Gewährleistung' (warranty). Requires following nuanced negotiation with multiple discussion points.",
+        "text": "Sie hören eine Diskussion zwischen zwei Geschäftsleuten über eine Fusion. Welche Bedenken gibt es?",
+        "options": [
+          "Zu viele Redundanzen und mögliche Entlassungen",
+          "Unterschiedliche Unternehmenskulturen",
+          "Finanzielle Instabilität"
+        ],
+        "answer": "Zu viele Redundanzen und mögliche Entlassungen",
+        "explanation": "Eine Person sagt: 'Meine größte Sorge ist, dass es zu viele doppelte Positionen gibt und wir werden wahrscheinlich viele gute Mitarbeiter verlieren müssen.'",
         "difficulty": "hard",
-        "source": "listening_practice_4"
-      },
-      {
-        "id": "H_H_002",
-        "text": "Listen to a regulatory compliance briefing. What are the three compliance requirements AND what is the penalty for non-compliance?",
-        "options": ["Data protection, Financial reporting, Environmental standards; Fine of €50,000", "Employee safety, Record retention, Audit procedures; Criminal charges possible", "Accessibility standards, Privacy policies, Security protocols; License revocation possible"],
-        "answer": "A",
-        "explanation": "The compliance officer lists: 'Datenschutz', 'Finanzberichterstattung', 'Umweltstandards' as requirements, with 'Geldstrafen von 50.000 Euro' (fines of €50,000) for violations. Requires capturing specific numbers and multiple categories.",
-        "difficulty": "hard",
-        "source": "listening_practice_4"
-      },
-      {
-        "id": "H_H_003",
-        "text": "Listen to a medical professional explaining treatment options. What is the speaker's implicit recommendation based on cost, effectiveness, and recovery time?",
-        "options": ["Option A: Most effective but expensive and slow recovery", "Option B: Moderate effectiveness with reasonable cost and faster recovery", "Option C: Least effective but quickest and cheapest"],
-        "answer": "B",
-        "explanation": "The speaker discusses trade-offs: A is 'am wirksamsten aber teuer mit langer Erholung', C is 'schnell aber weniger wirksam', implying B balances all factors. Requires inference from comparative analysis.",
-        "difficulty": "hard",
-        "source": "listening_practice_4"
-      },
-      {
-        "id": "H_H_004",
-        "text": "Listen to a cultural commentary. What is the speaker's attitude toward the topic: enthusiastic, skeptical, neutral, or conflicted?",
-        "options": ["Enthusiastic", "Skeptical", "Neutral", "Conflicted"],
-        "answer": "D",
-        "explanation": "The speaker acknowledges positive aspects ('gut für...') but expresses concerns ('allerdings...', 'das Problem ist...'). Recognizing conflicted tone requires understanding emotional undertones and contradictions in argument.",
-        "difficulty": "hard",
-        "source": "listening_practice_4"
-      },
-      {
-        "id": "H_H_005",
-        "text": "Listen to an interview with a company executive. Based on tone, emphasis, and what is NOT said, what can you infer about their real opinion on the proposed merger?",
-        "options": ["Fully supportive and excited", "Cautiously optimistic but concerned", "Politely avoiding commitment", "Clearly opposed"],
-        "answer": "C",
-        "explanation": "While saying 'wir erwägen es' (we're considering it), the executive emphasizes 'many questions', hedges with 'könnte möglich sein' (could be possible), and avoids committing. Requires reading between lines - noticing what's avoided, hedging language, and cautious tone.",
-        "difficulty": "hard",
-        "source": "listening_practice_4"
+        "source": "TELC B2"
       }
     ]
   },
@@ -492,142 +281,34 @@
     "easy": [
       {
         "id": "SP_E_001",
-        "text": "Presentation topic: Describe your ideal workplace. Cover: physical environment, colleague interactions, work-life balance, and benefits.",
+        "text": "Präsentieren Sie: Beschreiben Sie Ihren idealen Arbeitsplatz. Nennen Sie: physische Umgebung, Kollegialität, Work-Life-Balance, Benefits. (2-3 Minuten)",
         "options": null,
-        "answer": "Should include: Clear description of physical space (modern, quiet, etc.), positive colleague dynamics, flexible hours, healthcare/wellness benefits. Speak for 2-3 minutes with natural pauses.",
-        "explanation": "Basic presentation requires organizing thoughts into clear categories and speaking continuously. Practice: opening statement, develop each point with examples, brief conclusion. Tip: Start with 'Mein idealer Arbeitsplatz hätte...' to establish topic clearly.",
+        "answer": "Sollte enthalten: Klare Beschreibung der physischen Arbeitsstätte (modern, ruhig, etc.), positive Kollegendynamik, flexible Arbeitszeiten, Gesundheits- und Wellness-Programm. Natürliche Rede ohne Auswendiglernen.",
+        "explanation": "Grundlegende Präsentation. Struktur: Einleitung, entwickeln Sie jede Kategorie mit Beispielen, Schluss. Sprechen Sie frei und natürlich.",
         "difficulty": "easy",
-        "source": "speaking_practice_1"
-      },
-      {
-        "id": "SP_E_002",
-        "text": "Presentation topic: Explain a hobby or interest of yours. Include: what it is, why you enjoy it, how often you do it, and what skills you've developed.",
-        "options": null,
-        "answer": "Should include: Clear hobby identification, 2-3 reasons why you like it, frequency (daily, weekly, etc.), specific skills gained. Speak for 2-3 minutes organized logically.",
-        "explanation": "Personal topic for comfort and natural speech. Structure: 'Ich interessiere mich für... weil...', develop points with details, conclude with benefits gained. Goal: speak naturally without memorizing verbatim.",
-        "difficulty": "easy",
-        "source": "speaking_practice_1"
-      },
-      {
-        "id": "SP_E_003",
-        "text": "Presentation topic: Describe a country or city you'd like to visit. Include: location, attractions, when you'd like to go, and what you'd do there.",
-        "options": null,
-        "answer": "Should include: Specific location, 3-4 attractions/reasons, ideal season/timeframe, detailed activities. Speak for 2-3 minutes with enthusiasm and detail.",
-        "explanation": "Descriptive topic allowing visual language. Use: 'Ich würde gerne... besuchen, weil...', describe places vividly, explain activities. Natural for showing emotion and interest in speaking.",
-        "difficulty": "easy",
-        "source": "speaking_practice_2"
-      },
-      {
-        "id": "SP_E_004",
-        "text": "Presentation topic: Explain your career goals. Include: current position/studies, short-term goal (1-2 years), long-term goal (5+ years), and steps to achieve them.",
-        "options": null,
-        "answer": "Should include: Current situation, specific near goals, ambitious long-term vision, 2-3 concrete steps (training, experience, etc.). Speak for 2-3 minutes showing ambition and planning.",
-        "explanation": "Career-focused for business context. Structure: 'Ich arbeite derzeit als... Mein Ziel ist es...', explain progression logically, mention specific actions. Shows career awareness and language for professional contexts.",
-        "difficulty": "easy",
-        "source": "speaking_practice_2"
-      },
-      {
-        "id": "SP_E_005",
-        "text": "Presentation topic: Discuss a skill you want to develop. Include: what skill, why it's important, how you plan to learn it, and expected timeline.",
-        "options": null,
-        "answer": "Should include: Clear skill identification, 2-3 reasons why important, specific learning method (course, practice, etc.), realistic timeline. Speak for 2-3 minutes showing self-awareness.",
-        "explanation": "Development-focused showing growth mindset. Use: 'Ich möchte... verbessern, weil...', explain learning strategy in detail, mention obstacles and solutions. Demonstrates maturity and professional self-development.",
-        "difficulty": "easy",
-        "source": "speaking_practice_1"
+        "source": "TELC B2"
       }
     ],
     "medium": [
       {
         "id": "SP_M_001",
-        "text": "Presentation topic: Analyze a business challenge you're familiar with (from work, studies, or news). Include: the challenge, current solutions, limitations of those solutions, and your proposed improvement.",
+        "text": "Präsentieren Sie: Analysieren Sie eine Geschäftsherausforderung, die Sie kennen. Nennen Sie: die Herausforderung, aktuelle Lösungen, Einschränkungen, Ihre Verbesserungen. (3-4 Minuten)",
         "options": null,
-        "answer": "Should include: Clear problem statement with context, 2-3 existing approaches with examples, specific limitations identified, detailed improvement proposal with rationale. Speak for 3-4 minutes showing analytical thinking.",
-        "explanation": "Requires critical analysis beyond description. Structure: 'Ein Problem, das ich kenne, ist...', explain current solutions, acknowledge what works but lacks, propose concrete improvement. Goal: show sophisticated thinking and business understanding.",
+        "answer": "Sollte enthalten: Klare Problemdefinition mit Kontext, 2-3 bestehende Ansätze mit Beispielen, spezifische Schwachstellen, detailliertes Verbesserungsvorhaben.",
+        "explanation": "Erfordert kritische Analyse. Zeigen Sie: Verständnis des Problems, ehrliche Evaluierung bestehender Lösungen, praktische Verbesserungsvorschläge.",
         "difficulty": "medium",
-        "source": "speaking_practice_3"
-      },
-      {
-        "id": "SP_M_002",
-        "text": "Presentation topic: Discuss an ethical dilemma in business or society. Include: description of dilemma, stakeholder perspectives (at least 2), potential solutions, and your reasoned position.",
-        "options": null,
-        "answer": "Should include: Clear dilemma setup, explanation of 2-3 different viewpoints with empathy, 2-3 potential solutions, articulated personal position with justification. Speak for 3-4 minutes showing balanced thinking.",
-        "explanation": "Advanced topic requiring nuance. Demonstrate ability to: present multiple perspectives fairly, analyze trade-offs, articulate reasoned position (not just opinion). This shows mature communication valuable in business.",
-        "difficulty": "medium",
-        "source": "speaking_practice_3"
-      },
-      {
-        "id": "SP_M_003",
-        "text": "Presentation topic: Propose a change or improvement to a system you know (workplace, university, public service, etc.). Include: current system, problems identified, your proposal, expected benefits, and implementation challenges.",
-        "options": null,
-        "answer": "Should include: System overview, specific problems with examples, detailed proposal with clear steps, 3+ benefits articulated, realistic acknowledgment of implementation challenges. Speak for 3-4 minutes persuasively.",
-        "explanation": "Persuasive speaking requiring evidence and foresight. Structure: 'Das aktuelle System hat das Problem...', propose concrete solution, explain benefits clearly, acknowledge challenges shows realism. Shows initiative and strategic thinking.",
-        "difficulty": "medium",
-        "source": "speaking_practice_3"
-      },
-      {
-        "id": "SP_M_004",
-        "text": "Presentation topic: Explain a complex concept from your field/interest. Include: what it is, why it matters, how it works (simplified explanation), real-world applications.",
-        "options": null,
-        "answer": "Should include: Clear concept definition, relevance explanation, simplified mechanism/process with 2-3 steps, 2-3 practical applications. Speak for 3-4 minutes making complex ideas accessible.",
-        "explanation": "Tests ability to simplify and explain clearly - crucial professional skill. Use: analogies, clear language avoiding jargon (or explaining jargon), visual descriptions. Demonstrates subject mastery and communication skill.",
-        "difficulty": "medium",
-        "source": "speaking_practice_4"
-      },
-      {
-        "id": "SP_M_005",
-        "text": "Presentation topic: Reflect on a significant learning experience or failure. Include: what happened, initial reaction, what you learned, how you've applied this learning.",
-        "options": null,
-        "answer": "Should include: Specific situation description, honest emotional response, clear lessons identified, concrete examples of how you've changed behavior/thinking. Speak for 3-4 minutes with self-awareness and authenticity.",
-        "explanation": "Personal reflection showing maturity and growth mindset. Effective when: honest about difficulty, shows genuine learning (not defensive), demonstrates changed behavior. Valuable for interview/networking contexts showing self-reflection.",
-        "difficulty": "medium",
-        "source": "speaking_practice_2"
+        "source": "TELC B2"
       }
     ],
     "hard": [
       {
         "id": "SP_H_001",
-        "text": "Presentation topic: Analyze trends in your field or area of interest and project future implications. Include: current trends (2-3), data/evidence supporting them, predicted future scenario (5-10 years), and strategic implications.",
+        "text": "Präsentieren Sie: Analysieren Sie Trends in Ihrem Fachgebiet und projizieren Sie zukünftige Implikationen. (4-5 Minuten)",
         "options": null,
-        "answer": "Should include: Specific current trends with concrete examples/data, analysis of underlying drivers, scenario projection with supporting logic, implications for different stakeholders, acknowledgment of uncertainty. Speak for 4-5 minutes with strategic thinking.",
-        "explanation": "Future-focused analysis requiring synthesis of information and speculation. Must show: awareness of current landscape, logical progression from trend to implication, acknowledgment that predictions have uncertainty. Valuable for leadership/strategy contexts.",
+        "answer": "Sollte enthalten: Spezifische aktuelle Trends mit Daten, Analyse von Treibern, Szenario-Projektion (5-10 Jahre), Implikationen für verschiedene Stakeholder, Anerkennung von Unsicherheit.",
+        "explanation": "Future-fokussiert. Zeigen Sie: Kenntnis der aktuellen Lage, logische Progression von Trend zu Auswirkung, Anerkennung von Komplexität.",
         "difficulty": "hard",
-        "source": "speaking_practice_4"
-      },
-      {
-        "id": "SP_H_002",
-        "text": "Presentation topic: Comparative analysis - compare two approaches, organizations, or systems. Include: criteria for comparison (3-4 important dimensions), detailed comparison on each criterion, analysis of trade-offs, recommendation with justification.",
-        "options": null,
-        "answer": "Should include: Clear comparison criteria, structured analysis of each item against criteria with examples, explicit trade-off analysis (what A does better vs B), justified recommendation considering context. Speak for 4-5 minutes with analytical depth.",
-        "explanation": "Sophisticated analysis skill. Goal: show ability to evaluate complex options systematically. Structure: establish criteria (why these matter), evaluate fairly, acknowledge legitimate advantages of both options, make defensible recommendation based on analysis.",
-        "difficulty": "hard",
-        "source": "speaking_practice_4"
-      },
-      {
-        "id": "SP_H_003",
-        "text": "Presentation topic: Develop a business case for a significant initiative. Include: opportunity/problem statement, target market/audience, competitive landscape, proposed solution, financial projection, risks and mitigation, and call to action.",
-        "options": null,
-        "answer": "Should include: Clear problem/opportunity with market data, specific target audience, 2-3 key competitors analyzed, detailed solution, financial projections (investment required, revenue potential, timeline), identified risks with mitigation strategies, clear next steps. Speak for 5-6 minutes with business sophistication.",
-        "explanation": "Executive-level presentation requiring comprehensive business thinking. Should sound prepared but not scripted, use language naturally, field questions with composure. Demonstrates ability to think and communicate at strategic level.",
-        "difficulty": "hard",
-        "source": "speaking_practice_4"
-      },
-      {
-        "id": "SP_H_004",
-        "text": "Presentation topic: Argue for a controversial position in your field. Include: your clear position, strongest counterarguments, detailed rebuttals, supporting evidence, and response to likely objections.",
-        "options": null,
-        "answer": "Should include: Clear thesis statement of position, articulation of legitimate opposing views (showing you've considered them seriously), detailed logical rebuttals, evidence from credible sources, predicted objections with prepared responses. Speak for 4-5 minutes with intellectual integrity.",
-        "explanation": "Sophisticated persuasive speaking. Key: acknowledge strongest criticisms (not weak ones), rebut respectfully with logic not emotion, back up claims with evidence, show intellectual honesty by admitting limitations. Demonstrates expert-level thinking.",
-        "difficulty": "hard",
-        "source": "speaking_practice_4"
-      },
-      {
-        "id": "SP_H_005",
-        "text": "Presentation topic: Design and pitch a new innovative solution to an identified problem. Include: problem validation (why it matters), solution overview, how it's different/better, implementation plan, potential objections, and why this needs to happen now.",
-        "options": null,
-        "answer": "Should include: Well-researched problem statement with data, creative solution with clear benefits, explicit differentiation from existing alternatives, realistic implementation roadmap, acknowledgment of challenges with mitigation, urgency articulation based on market/social factors. Speak for 5-6 minutes with innovation and leadership thinking.",
-        "explanation": "Entrepreneurial/innovation-level presentation. Goal: balance visionary thinking with realistic planning, show market awareness, demonstrate innovation (not obvious), create sense of urgency/opportunity. Requires ability to think strategically and communicate persuasively under complexity.",
-        "difficulty": "hard",
-        "source": "speaking_practice_4"
+        "source": "TELC B2"
       }
     ]
   }

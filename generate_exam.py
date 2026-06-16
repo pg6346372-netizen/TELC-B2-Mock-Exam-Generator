@@ -53,33 +53,33 @@ class TelcExamGenerator:
             'sections': {}
         }
 
-        # Balanced difficulty distribution (not too easy, not too hard)
+        # Ausgeglichene Schwierigkeitsverteilung (nicht zu leicht, nicht zu schwer)
         difficulty_dist = {'easy': 0.25, 'medium': 0.5, 'hard': 0.25}
 
-        # LESEN: 20 questions (roughly from document)
+        # LESEN: 20 Fragen
         exam['sections']['lesen'] = {
-            'title': 'LESEN (Reading)',
+            'title': 'LESEN',
             'time_minutes': 45,
             'questions': self._select_balanced_questions('lesen', 20, difficulty_dist)
         }
 
-        # SCHREIBEN: 2 writing tasks
+        # SCHREIBEN: 2 Schreibaufgaben
         exam['sections']['schreiben'] = {
-            'title': 'SCHREIBEN (Writing)',
+            'title': 'SCHREIBEN',
             'time_minutes': 60,
             'questions': self._select_balanced_questions('schreiben', 2, difficulty_dist)
         }
 
-        # HÖREN: 6-8 listening questions
+        # HÖREN: 7 Hörverstehen-Fragen
         exam['sections']['horen'] = {
-            'title': 'HÖREN (Listening)',
+            'title': 'HÖREN',
             'time_minutes': 30,
             'questions': self._select_balanced_questions('horen', 7, difficulty_dist)
         }
 
-        # SPRECHEN: 1 speaking task
+        # SPRECHEN: 1 Sprechaufgabe
         exam['sections']['sprechen'] = {
-            'title': 'SPRECHEN (Speaking)',
+            'title': 'SPRECHEN',
             'time_minutes': 15,
             'questions': self._select_balanced_questions('sprechen', 1, difficulty_dist)
         }
@@ -100,7 +100,7 @@ class TelcExamGenerator:
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TELC B2 Mock Exam {exam['exam_number']}</title>
+    <title>TELC B2 Prüfung {exam['exam_number']}</title>
     <style>
         body {{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -222,12 +222,12 @@ class TelcExamGenerator:
 </head>
 <body>
     <div class="container">
-        <button class="print-button no-print" onclick="window.print()">🖨️ Print / Download as PDF</button>
+        <button class="print-button no-print" onclick="window.print()">🖨️ Drucken / Als PDF herunterladen</button>
 
         <header>
-            <h1>TELC B2 Mock Exam {exam['exam_number']}</h1>
+            <h1>TELC B2 Prüfung {exam['exam_number']}</h1>
             <div class="exam-info">
-                Generated: {exam['generated_date'].split('T')[0]} | Exam ID: {exam['exam_id']}
+                Generiert: {exam['generated_date'].split('T')[0]} | Prüfungs-ID: {exam['exam_id']}
             </div>
         </header>
 """
@@ -259,8 +259,8 @@ class TelcExamGenerator:
                 if include_answers and question.get('answer'):
                     html += f"""
                 <div class="answer-key">
-                    <strong>Answer:</strong> {question['answer']}<br>
-                    <strong>Explanation:</strong> {question.get('explanation', 'See answer key for detailed explanation.')}
+                    <strong>Antwort:</strong> {question['answer']}<br>
+                    <strong>Erklärung:</strong> {question.get('explanation', 'Siehe Lösungsschlüssel für detaillierte Erklärung.')}
                 </div>
 """
 
@@ -270,7 +270,7 @@ class TelcExamGenerator:
 
         html += """
         <div class="footer">
-            <p>TELC B2 Mock Exam Generator | Use for preparation purposes</p>
+            <p>TELC B2 Prüfungsgenerator | Zum Üben und Vorbereitung verwenden</p>
         </div>
     </div>
 </body>
@@ -295,44 +295,44 @@ class TelcExamGenerator:
 
 def main():
     try:
-        # Initialize generator
+        # Generator initialisieren
         generator = TelcExamGenerator()
 
-        print("🎓 TELC B2 Mock Exam Generator")
+        print("🎓 TELC B2 Prüfungsgenerator")
         print("=" * 50)
 
-        # Generate 3 balanced exams
-        print("\n📝 Generating 3 balanced mock exams...")
+        # 3 ausgeglichene Prüfungen generieren
+        print("\n📝 Generiere 3 ausgeglichene Übungsprüfungen...")
         exams = generator.generate_multiple_exams(count=3)
 
-        # Save exams (without answers)
+        # Prüfungen speichern (ohne Antworten)
         exam_files = []
         for exam in exams:
             filepath = generator.save_exam(exam, output_dir='exams', include_answers=False)
             exam_files.append(filepath)
-            print(f"✅ Exam {exam['exam_number']} saved: {filepath}")
+            print(f"✅ Prüfung {exam['exam_number']} gespeichert: {filepath}")
 
-        # Generate answer keys (with answers)
-        print("\n📚 Generating answer keys...")
+        # Lösungsschlüssel generieren (mit Antworten)
+        print("\n📚 Generiere Lösungsschlüssel...")
         for exam in exams:
             filepath = os.path.join('exams', f"{exam['exam_id']}_answers.html")
             html_content = generator.export_exam_to_html(exam, include_answers=True)
             with open(filepath, 'w', encoding='utf-8') as f:
                 f.write(html_content)
-            print(f"✅ Answer key {exam['exam_number']} saved: {filepath}")
+            print(f"✅ Lösungsschlüssel {exam['exam_number']} gespeichert: {filepath}")
 
         print("\n" + "=" * 50)
-        print("✨ Done! All exams have been generated.")
-        print(f"\n📊 Summary:")
-        print(f"   • {len(exam_files)} exams created")
-        print(f"   • {len(exam_files)} answer keys created")
-        print(f"\nTo generate new exams, run this script again.")
-        print("To customize difficulty balance, edit the generate_exam() method.")
+        print("✨ Fertig! Alle Prüfungen wurden generiert.")
+        print(f"\n📊 Zusammenfassung:")
+        print(f"   • {len(exam_files)} Prüfungen erstellt")
+        print(f"   • {len(exam_files)} Lösungsschlüssel erstellt")
+        print(f"\nUm neue Prüfungen zu generieren, führen Sie dieses Skript erneut aus.")
+        print("Zum Ändern der Schwierigkeitsverteilung bearbeiten Sie die generate_exam()-Methode.")
 
     except FileNotFoundError as e:
-        print(f"❌ Error: {e}")
-        print("\nPlease ensure 'data/questions.json' exists in the same directory.")
-        print("See README.md for instructions on setting up the questions database.")
+        print(f"❌ Fehler: {e}")
+        print("\nBitte stellen Sie sicher, dass 'data/questions.json' im gleichen Verzeichnis existiert.")
+        print("Siehe README.md für Anweisungen zum Einrichten der Fragendatenbank.")
 
 
 if __name__ == '__main__':
