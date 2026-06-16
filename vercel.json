@@ -1,4 +1,3 @@
 {
-  "public": "web",
-  "buildCommand": "exit 0"
+  "public": "web"
 }
