@@ -1,24 +1,3 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "{index,exam-generator}.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "questions.json",
-      "use": "@vercel/static"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/questions.json",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/json"
-        }
-      ]
-    }
-  ]
+  "public": "."
 }
