@@ -246,8 +246,19 @@ class TelcExamGenerator:
             for i, question in enumerate(section_data['questions'], 1):
                 html += f"""
             <div class="question">
-                <div class="question-number">Question {i}</div>
-                <div class="question-text">{question.get('text', 'Question content')}</div>
+                <div class="question-number">Aufgabe {i}</div>
+"""
+
+                # Add passage if it exists
+                if question.get('passage'):
+                    html += f"""
+                <div class="passage" style="background-color: #f0f0f0; padding: 15px; margin-bottom: 15px; border-left: 4px solid #666; font-size: 0.95em; line-height: 1.6; white-space: pre-wrap;">
+{question.get('passage')}
+                </div>
+"""
+
+                html += f"""
+                <div class="question-text" style="margin-top: 15px; font-weight: 500;">{question.get('text', 'Frage')}</div>
 """
 
                 if question.get('options'):

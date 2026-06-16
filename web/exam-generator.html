@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TELC B2 Prüfungsgenerator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            padding-top: 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .controls {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        button {
+            background-color: #667eea;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #5568d3;
+        }
+
+        button.print {
+            background-color: #48bb78;
+        }
+
+        button.print:hover {
+            background-color: #38a169;
+        }
+
+        .exam-container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            min-height: 600px;
+        }
+
+        .exam-header {
+            text-align: center;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .exam-header h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .exam-info {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .section {
+            margin: 40px 0;
+            page-break-inside: avoid;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .section-header h3 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .time-badge {
+            background-color: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .question {
+            margin: 25px 0;
+            padding: 15px;
+            border-left: 4px solid #667eea;
+            background-color: #f9f9f9;
+        }
+
+        .question-number {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .passage {
+            background-color: #f0f0f0;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+            white-space: pre-wrap;
+            border-radius: 4px;
+        }
+
+        .question-text {
+            margin: 15px 0;
+            font-weight: 500;
+            font-size: 1em;
+        }
+
+        .options {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        .option {
+            margin: 8px 0;
+            line-height: 1.6;
+        }
+
+        .answer-key {
+            background-color: #e8f4f8;
+            border-left: 4px solid #00a86b;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 0.95em;
+        }
+
+        .answer-key strong {
+            color: #00a86b;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #999;
+            font-size: 12px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #667eea;
+            font-size: 1.2em;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .controls {
+                display: none;
+            }
+
+            .exam-container {
+                box-shadow: none;
+            }
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: #999;
+        }
+
+        .empty-state p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            background-color: #e0e0e0;
+            color: #333;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .tab-btn.active {
+            background-color: #667eea;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 TELC B2 Prüfungsgenerator</h1>
+            <p>Generieren Sie unbegrenzte Übungsprüfungen für Ihre Vorbereitung</p>
+        </div>
+
+        <div class="controls">
+            <button onclick="generateNewExam()">📝 Neue Prüfung generieren</button>
+            <button class="print" onclick="window.print()">🖨️ Drucken / Als PDF speichern</button>
+            <label style="display: flex; align-items: center; gap: 10px; color: #333;">
+                <input type="checkbox" id="showAnswers" onchange="generateNewExam()">
+                Lösungsschlüssel anzeigen
+            </label>
+        </div>
+
+        <div id="examContainer" class="exam-container">
+            <div class="empty-state">
+                <p>👇 Klicken Sie auf "Neue Prüfung generieren" um zu starten</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let questionsData = null;
+
+        // Load questions on page load
+        async function loadQuestions() {
+            try {
+                const response = await fetch('../data/questions.json');
+                questionsData = await response.json();
+            } catch (error) {
+                console.error('Error loading questions:', error);
+                document.getElementById('examContainer').innerHTML = '<div class="empty-state"><p>❌ Fehler beim Laden der Fragen</p></div>';
+            }
+        }
+
+        function generateNewExam() {
+            if (!questionsData) {
+                alert('Fragen werden noch geladen...');
+                return;
+            }
+
+            const showAnswers = document.getElementById('showAnswers').checked;
+            const now = new Date();
+            const examId = `exam_${now.getFullYear()}${String(now.getMonth()+1).padStart(2,'0')}${String(now.getDate()).padStart(2,'0')}_${String(now.getHours()).padStart(2,'0')}${String(now.getMinutes()).padStart(2,'0')}${String(now.getSeconds()).padStart(2,'0')}`;
+
+            let html = `
+            <div class="exam-header">
+                <h2>TELC B2 Prüfung</h2>
+                <div class="exam-info">
+                    Generiert: ${now.toLocaleDateString('de-DE')} | Prüfungs-ID: ${examId}
+                </div>
+            </div>
+            `;
+
+            // Generate sections
+            const sections = [
+                { key: 'lesen', title: 'LESEN', time: 45, count: 5 },
+                { key: 'schreiben', title: 'SCHREIBEN', time: 60, count: 2 },
+                { key: 'horen', title: 'HÖREN', time: 30, count: 3 },
+                { key: 'sprechen', title: 'SPRECHEN', time: 15, count: 1 }
+            ];
+
+            sections.forEach(section => {
+                const sectionData = questionsData[section.key];
+                if (!sectionData) return;
+
+                // Select balanced questions
+                const difficulties = ['easy', 'medium', 'hard'];
+                const selectedQuestions = [];
+
+                difficulties.forEach(difficulty => {
+                    const questions = sectionData[difficulty] || [];
+                    if (questions.length > 0) {
+                        const randomQuestion = questions[Math.floor(Math.random() * questions.length)];
+                        selectedQuestions.push(randomQuestion);
+                    }
+                });
+
+                // Shuffle and limit
+                selectedQuestions.sort(() => Math.random() - 0.5);
+                const questionsForSection = selectedQuestions.slice(0, section.count);
+
+                html += `
+                <div class="section">
+                    <div class="section-header">
+                        <h3>${section.title}</h3>
+                        <div class="time-badge">⏱️ ${section.time} Min.</div>
+                    </div>
+                `;
+
+                questionsForSection.forEach((question, index) => {
+                    html += `<div class="question">`;
+                    html += `<div class="question-number">Aufgabe ${index + 1}</div>`;
+
+                    if (question.passage) {
+                        html += `<div class="passage">${question.passage}</div>`;
+                    }
+
+                    html += `<div class="question-text">${question.text}</div>`;
+
+                    if (question.options && question.options.length > 0) {
+                        html += `<div class="options">`;
+                        question.options.forEach((option, optIndex) => {
+                            html += `<div class="option">(${String.fromCharCode(97 + optIndex)}) ${option}</div>`;
+                        });
+                        html += `</div>`;
+                    }
+
+                    if (showAnswers && question.answer) {
+                        html += `
+                        <div class="answer-key">
+                            <strong>Antwort:</strong> ${question.answer}<br>
+                            <strong>Erklärung:</strong> ${question.explanation || 'Siehe Lösungsschlüssel'}
+                        </div>
+                        `;
+                    }
+
+                    html += `</div>`;
+                });
+
+                html += `</div>`;
+            });
+
+            html += `
+            <div class="footer">
+                <p>TELC B2 Prüfungsgenerator | Zum Üben und zur Vorbereitung nutzen</p>
+            </div>
+            `;
+
+            document.getElementById('examContainer').innerHTML = html;
+        }
+
+        // Load questions when page loads
+        loadQuestions();
+    </script>
+</body>
+</html>
