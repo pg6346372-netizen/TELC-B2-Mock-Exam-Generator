@@ -1,4 +1,4 @@
 {
-  "public": "web",
-  "buildCommand": "ls -la web/"
+  "buildCommand": "mkdir -p /tmp/out && cp -r web/* /tmp/out/",
+  "outputDirectory": "/tmp/out"
 }
