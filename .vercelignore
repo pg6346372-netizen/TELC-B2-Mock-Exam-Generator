@@ -1,9 +1,0 @@
-/.git
-/__pycache__
-/.DS_Store
-/data
-/exams
-/*.py
-/requirements.txt
-/node_modules
-/package.json
