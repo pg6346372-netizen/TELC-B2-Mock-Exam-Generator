@@ -1,3 +1,5 @@
 {
-  "public": "web"
+  "public": "web",
+  "buildCommand": "test -d web",
+  "outputDirectory": "web"
 }
