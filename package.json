@@ -6,8 +6,7 @@
   "scripts": {
     "generate": "python3 generate_exam.py",
     "generate:batch": "python3 generate_exam.py --count=10",
-    "start": "python3 -m http.server 8000 --directory web",
-    "build": "pip install -r requirements.txt && python3 generate_exam.py"
+    "start": "python3 -m http.server 8000 --directory web"
   },
   "keywords": [
     "TELC",
