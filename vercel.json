@@ -1,3 +1,4 @@
 {
-  "public": "web"
+  "public": "web",
+  "buildCommand": "ls -la web/"
 }
