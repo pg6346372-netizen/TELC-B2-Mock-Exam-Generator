@@ -1,32 +1,11 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/*.py",
-      "use": "@vercel/python"
-    },
-    {
-      "src": "web/**",
-      "use": "@vercel/static"
-    }
-  ],
+  "buildCommand": "pip install -r requirements.txt",
+  "public": "web",
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "api/$1"
-    },
-    {
-      "src": "/exams/(.*)",
-      "dest": "exams/$1"
-    },
-    {
       "src": "/(.*)",
-      "dest": "web/$1"
+      "dest": "/web/$1"
     }
-  ],
-  "env": {
-    "PYTHON_VERSION": "3.9"
-  },
-  "name": "telc-b2-mock-exam-generator",
-  "buildCommand": "pip install -r requirements.txt && python3 generate_exam.py"
+  ]
 }
