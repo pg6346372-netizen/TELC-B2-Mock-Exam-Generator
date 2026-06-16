@@ -428,34 +428,60 @@
                     let questionCounter = 1;
 
                     teile.forEach(teil => {
-                        const questions = sectionData[teil];
-                        if (questions && questions.length > 0) {
-                            const question = questions[Math.floor(Math.random() * questions.length)];
+                        const passages = sectionData[teil];
+                        if (passages && passages.length > 0) {
+                            const passage = passages[Math.floor(Math.random() * passages.length)];
 
                             html += `<div class="question">`;
                             html += `<div class="question-number">Aufgabe ${questionCounter} <span class="teil-label">(${teil})</span></div>`;
 
-                            if (question.passage) {
-                                html += `<div class="passage">${question.passage}</div>`;
+                            if (passage.passage) {
+                                html += `<div class="passage">${passage.passage}</div>`;
                             }
 
-                            html += `<div class="question-text">${question.text}</div>`;
+                            // Handle new structure with nested questions
+                            if (passage.questions && passage.questions.length > 0) {
+                                passage.questions.forEach((q, qIdx) => {
+                                    html += `<div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #ddd;">`;
+                                    html += `<div class="question-text"><strong>Frage ${q.number}:</strong> ${q.question}</div>`;
 
-                            if (question.options && question.options.length > 0) {
-                                html += `<div class="options">`;
-                                question.options.forEach((option, optIndex) => {
-                                    html += `<div class="option">(${String.fromCharCode(97 + optIndex)}) ${option}</div>`;
+                                    if (q.options && q.options.length > 0) {
+                                        html += `<div class="options">`;
+                                        q.options.forEach((option, optIndex) => {
+                                            html += `<div class="option">(${String.fromCharCode(97 + optIndex)}) ${option}</div>`;
+                                        });
+                                        html += `</div>`;
+                                    }
+
+                                    if (showAnswers && q.answer) {
+                                        html += `
+                                        <div class="answer-key">
+                                            <strong>Antwort:</strong> ${q.answer}
+                                        </div>
+                                        `;
+                                    }
+                                    html += `</div>`;
                                 });
-                                html += `</div>`;
-                            }
+                            } else {
+                                // Fallback for old structure
+                                html += `<div class="question-text">${passage.text}</div>`;
 
-                            if (showAnswers && question.answer) {
-                                html += `
-                                <div class="answer-key">
-                                    <strong>Antwort:</strong> ${question.answer}<br>
-                                    <strong>Erklärung:</strong> ${question.explanation || 'Siehe Lösungsschlüssel'}
-                                </div>
-                                `;
+                                if (passage.options && passage.options.length > 0) {
+                                    html += `<div class="options">`;
+                                    passage.options.forEach((option, optIndex) => {
+                                        html += `<div class="option">(${String.fromCharCode(97 + optIndex)}) ${option}</div>`;
+                                    });
+                                    html += `</div>`;
+                                }
+
+                                if (showAnswers && passage.answer) {
+                                    html += `
+                                    <div class="answer-key">
+                                        <strong>Antwort:</strong> ${passage.answer}<br>
+                                        <strong>Erklärung:</strong> ${passage.explanation || 'Siehe Lösungsschlüssel'}
+                                    </div>
+                                    `;
+                                }
                             }
 
                             html += `</div>`;
