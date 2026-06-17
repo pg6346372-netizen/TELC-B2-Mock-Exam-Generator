@@ -1,0 +1,26 @@
+{
+  "name": "telc-b2-mock-exam-generator",
+  "version": "1.0.0",
+  "description": "Generate unlimited balanced TELC B2 mock exams with separate answer keys",
+  "main": "generate_exam.py",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'",
+    "generate": "python3 generate_exam.py",
+    "generate:batch": "python3 generate_exam.py --count=10",
+    "start": "python3 -m http.server 8000 --directory web"
+  },
+  "keywords": [
+    "TELC",
+    "B2",
+    "exam",
+    "mock-exam",
+    "German",
+    "language-learning",
+    "practice-test"
+  ],
+  "author": "TELC B2 Exam Generator",
+  "license": "MIT",
+  "engines": {
+    "python": "3.9"
+  }
+}

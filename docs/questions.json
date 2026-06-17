@@ -1,0 +1,173 @@
+{
+  "lesen": {
+    "teil1": [
+      {
+        "id": "L1_001",
+        "type": "matching",
+        "persons": [
+          {"number": 1, "description": "Kurt sucht einen Job und braucht Anregungen für seine Unterlagen."},
+          {"number": 2, "description": "Juliette arbeitet gerne, fühlt sich aber oft erschöpft."},
+          {"number": 3, "description": "Peter ist vor seinem Start im neuen Unternehmen nervös."},
+          {"number": 4, "description": "Katharina ist wegen des niedrigen Verdienstes in ihrer Branche frustriert."},
+          {"number": 5, "description": "Carlos braucht Tipps für seine Tätigkeit im Homeoffice."}
+        ],
+        "articles": [
+          {"label": "a", "title": "Den Arbeitsplatz produktiv gestalten", "text": "Die richtige Atmosphäre am Arbeitsplatz ist für die effektive Erledigung der Aufgaben unerlässlich. Gerlinde Strauß beschreibt, wie man mit den richtigen Möbeln, Dekoartikeln, Licht, Ordnung am Arbeitsplatz und vielem mehr die eigene Umgebung so gestaltet, dass man die Zeit am Arbeitsplatz gerne und erfolgreich verbringt."},
+          {"label": "b", "title": "Ohne Selbstdisziplin geht es nicht", "text": "Die Arbeit von zu Hause aus erfordert ein hohes Maß an Selbstdisziplin und die Fähigkeit des Selbstmanagements. Privates und Arbeit sollten strikt getrennt werden. Doch wie funktioniert das am besten? Helga Brinkmann hat einen Ratgeber für Arbeitskräfte herausgegeben, deren Unternehmen diese Form der Arbeit anbieten."},
+          {"label": "c", "title": "Hobbys im Lebenslauf richtig einsetzen", "text": "Ausbildung und Qualifikation sind in erster Linie wichtig, wenn man den Lebenslauf eines Bewerbers liest. Doch auch, welche Hobbys eine Person hat, kann Auskunft darüber geben, ob sie zum Unternehmen passt oder nicht. Lesen Sie hier wichtige Tipps und Tricks für eine überzeugende Bewerbung."},
+          {"label": "d", "title": "Was unsere Körpersprache über uns verrät", "text": "Ob beim Vorstellungsgespräch, bei wichtigen Verhandlungen mit Kunden oder am ersten Arbeitstag - unsere Körpersprache gibt immer Auskunft darüber, wie wir uns gerade fühlen. Lernen Sie in unserem Seminar, wie Sie Körpersprache wirksam einsetzen."},
+          {"label": "e", "title": "Der erste Arbeitstag in der neuen Firma", "text": "So klappt es mit den Kolleginnen. Anspannung ist ganz normal: Beim Start im neuen Job ist es wichtig, gut vorbereitet zu sein. Im folgenden Artikel finden Sie eine Checkliste mit den wichtigsten Punkten, die Sie beachten sollten."}
+        ],
+        "answers": [
+          {"person": 1, "article": "c"},
+          {"person": 2, "article": "g"},
+          {"person": 3, "article": "e"},
+          {"person": 4, "article": "f"},
+          {"person": 5, "article": "b"}
+        ]
+      }
+    ],
+    "teil2": [
+      {
+        "id": "L2_001",
+        "type": "comprehension",
+        "title": "Betriebssport",
+        "passage": "Sportliche Aktivitäten werden bei uns großgeschrieben. So bieten wir unseren Mitarbeitern im Untergeschoss einen Fitnessraum mit Bodenmatten und mehreren Fitnessgeräten, wie z. B. zwei Indoor-Fahrradtrainern. Dieser ist für alle ganztägig frei und ohne Gebühr zugänglich und kann selbstverständlich auch in den Pausen genutzt werden.\n\nAußerdem nehmen wir als Unternehmen jedes Jahr am städtischen Firmenlauf teil. Es hat sich die Tradition entwickelt, dass sich die teilnehmenden Kolleginnen und Kollegen gemeinsam in einem wöchentlichen Lauftreff auf dieses Event vorbereiten. Dieser findet jeden Mittwoch um 17:30 Uhr statt.\n\nAbwechslungsreich gestaltete Arbeitsplätze in den Büros tragen zur Steigerung der Aktivität auch während der Arbeit bei. Alle Schreibtische sind höhenverstellbar, sodass Arbeiten auch im Stehen möglich ist.",
+        "questions": [
+          {
+            "number": 6,
+            "type": "boolean",
+            "text": "Der Fitnessraum ist während der Arbeitszeit geöffnet.",
+            "answer": "Richtig"
+          },
+          {
+            "number": 7,
+            "type": "multipleChoice",
+            "text": "Die Mitarbeiter",
+            "options": [
+              {"label": "a", "text": "erhalten einen Zuschuss für ein Deskbike"},
+              {"label": "b", "text": "haben teilweise spezielle Schreibtische in Stehhöhe"},
+              {"label": "c", "text": "können das hausinterne Fitnessstudio gratis nutzen"}
+            ],
+            "answer": "b"
+          }
+        ]
+      },
+      {
+        "id": "L2_002",
+        "type": "comprehension",
+        "title": "Zugangskontrolle und Zeiterfassung",
+        "passage": "Als Mitarbeiterinnen und Mitarbeiter erhalten Sie zu Beginn Ihres Arbeitsverhältnisses einen Firmenausweis mit Chip-Karte. Dieser berechtigt zum Zugang in das Unternehmensgebäude und dient gleichzeitig zur Erfassung der Arbeitszeit. Außerdem können Sie mit Ihrem Firmenausweis in der Kantine und am Getränkeautomaten bezahlen und das hauseigene Fitnessstudio benutzen.\n\nNeben den Aufzügen im Erdgeschoss finden Sie ein digitales Zeiterfassungsgerät. Bitte halten Sie beim Betreten und Verlassen des Gebäudes Ihren Firmenausweis an die blau markierte Fläche und vergewissern Sie sich, dass die Zeit des Arbeitsbeginns und Arbeitsendes richtig erfasst wurde.\n\nDie Zeiterfassung berechnet automatisch die reguläre Arbeitszeit sowie eventuelle Über- als auch Minusstunden. Die Personalabteilung richtet Ihnen einen Zugang zu unserem Arbeitskonto System PersoTime ein.",
+        "questions": [
+          {
+            "number": 6,
+            "type": "boolean",
+            "text": "Der Firmenausweis hat neben der Arbeitszeiterfassung auch andere Funktionen.",
+            "answer": "Richtig"
+          },
+          {
+            "number": 7,
+            "type": "multipleChoice",
+            "text": "Überstunden",
+            "options": [
+              {"label": "a", "text": "können online eingesehen werden"},
+              {"label": "b", "text": "sind in der Firma grundsätzlich nicht erlaubt"},
+              {"label": "c", "text": "werden von der Zeiterfassung nicht registriert"}
+            ],
+            "answer": "a"
+          }
+        ]
+      }
+    ],
+    "teil3": [
+      {
+        "id": "L3_001",
+        "type": "matching_persons",
+        "instructions": "Lesen Sie die Fragen 10-13 und die Texte. Welche Person sagt was? Schreiben Sie den Buchstaben (a-h) in die Lücke.",
+        "persons": [
+          {"number": 10, "quote": "Ich konnte leider mal wieder nicht zur Arbeit gehen, weil mein Kind krank war. Als ich heute angerufen habe, hat mein Chef total überzogen reagiert und mir mit Kündigung gedroht."},
+          {"number": 11, "quote": "Ich bin letzten Montag mit furchtbaren Kopfschmerzen aufgewacht und konnte nicht aufstehen. Leider habe ich vergessen, meinen Chef rechtzeitig zu benachrichtigen."},
+          {"number": 12, "quote": "Ich möchte gerne mobiler arbeiten und häufiger von zu Hause aus mein Homeoffice nutzen."},
+          {"number": 13, "quote": "Ich habe gestern einen Arbeitsunfall gehabt, aber ich bin mir nicht sicher, wie ich meinen Arbeitgeber informieren soll."}
+        ],
+        "responses": [
+          {"label": "a", "text": "Arbeitsunfall melden: Zunächst müssen Sie Ihren Arbeitgeber sofort benachrichtigen."},
+          {"label": "b", "text": "Krankmeldung: Eine Benachrichtigung sollte spätestens nach zwei Stunden erfolgen."},
+          {"label": "c", "text": "Familienfreundlichkeit: Das Unternehmen bietet flexible Arbeitszeitmodelle."},
+          {"label": "d", "text": "Schutzmaßnahmen: Der Arbeitgeber kann Sie nicht einfach kündigen wegen eines Familiennotfalls."}
+        ],
+        "answers": [
+          {"person": 10, "response": "d"},
+          {"person": 11, "response": "b"},
+          {"person": 12, "response": "c"},
+          {"person": 13, "response": "a"}
+        ]
+      }
+    ],
+    "teil4": [
+      {
+        "id": "L4_001",
+        "type": "document_comprehension",
+        "title": "Protokoll der Teambesprechung Verkauf, BüroCompact GmbH",
+        "document": "Datum: 14. 3. 2024, 14:00-15:00 Uhr\nAnwesende: Michael Fischer (MF, Teamleitung), Hannes Weigand (HW), Cädi Kunz (GK), Ludmila Wagner (LW), Tonek Karlstrom (TK), Qualitätssicherung, David Stein (DS, Betriebsrat), Loretta Gonzales (LG)\n\nTagesordnung:\nTOP 1: Begrüßung\nTOP 2: Verkauf im letzten Quartal\nTOP 3: Probleme\nTOP 4: Urlaub\nTOP 5: Verschiedenes\n\nTOP 1 Begrüßung\nMF begrüßt das anwesende Angebot. Für den geplanten Aufstieg der TOP 3 nimmt die Abteilung Qualitätssicherung teil.\n\nTOP 2 Verkauf im letzten Quartal\nDer Verkauf des ersten Quartals liegt über dem Vorjahresvergleich. TOP 1 Begriffsklärung erfolgreiches Angebot des TOP 1 remont Quartals. Der Verkauf bei Kalfeeausschmückungen belief sich auf 15% gegenüber dem Vorjahr. Es wurde hierbei festgestellt, dass die aufgerufenen Preise wetter auf den Angeboten hatten, auf der Angeboten Haushalt. Trotz der Angebote Haushalt liegt die Verkaufszahl bei einem Umsatz von TOP 4 Verlust. Im Vergleich der Website gingen die Website Besucherzahlen um 10% gegenüber Angebot Haushalt.",
+        "questions": [
+          {
+            "number": 14,
+            "type": "multipleChoice",
+            "text": "Aufgegriffen der vorliegenden Teambesprechung ist es in den Sommermonate zu erwarten, dass die Mitarbeitende kommen, falls die Urlaubswünsche mehr Arbeit zu anderen Firmen-Teams teilzunehmen. TX kommt",
+            "options": [
+              {"label": "a", "text": "wird heute nicht erklärt"},
+              {"label": "b", "text": "sind Problemfelder, die Umsatzkosten betreffen"},
+              {"label": "c", "text": "können auf der nächsten Sitzung vorgestellt werden"}
+            ],
+            "answer": "a"
+          }
+        ]
+      }
+    ]
+  },
+  "lesen_und_schreiben": {
+    "teil1": [
+      {
+        "id": "LS1_001",
+        "type": "gapfill",
+        "instructions": "Lesen Sie die E-Mail. Ergänzen Sie die fehlenden Wörter.",
+        "text": "Liebe Anna,\nvielen Dank für deine E-Mail! Es freut mich, dass du mich besuchen möchtest. Leider bin ich in den nächsten Wochen sehr _____ (1) mit meinem neuen Job. Vielleicht _____ (2) wir uns aber im Mai treffen? Ich _____ (3) mich schon jetzt auf dein Kommen!\nViele Grüße,\nDein Thomas",
+        "gaps": [
+          {"number": 1, "answer": "beschäftigt"},
+          {"number": 2, "answer": "können"},
+          {"number": 3, "answer": "freue"}
+        ]
+      }
+    ],
+    "teil2": [
+      {
+        "id": "LS2_001",
+        "type": "writing",
+        "instructions": "Schreiben Sie eine E-Mail (80-100 Wörter)",
+        "task": "Ihr Freund/Ihre Freundin hat Sie zu einer Party eingeladen. Sie können leider nicht kommen. Schreiben Sie, warum nicht und machen Sie einen anderen Termin vor.",
+        "answer": "Individuelle Antwort"
+      }
+    ]
+  },
+  "horen": {
+    "teil1": [{"id": "H1_001", "type": "dialog", "instructions": "Sie hören einen Dialog."}],
+    "teil2": [{"id": "H2_001", "type": "conversation", "instructions": "Sie hören ein längeres Gespräch."}],
+    "teil3": [{"id": "H3_001", "type": "phone", "instructions": "Sie hören ein Telefongespräch."}],
+    "teil4": [{"id": "H4_001", "type": "broadcast", "instructions": "Sie hören einen Radiobericht."}]
+  },
+  "horen_und_schreiben": {
+    "teil1": [{"id": "HS1_001", "type": "announcement", "instructions": "Sie hören eine Durchsage."}],
+    "teil2": [{"id": "HS2_001", "type": "message", "instructions": "Sie hören eine Ansage."}]
+  },
+  "sprachbausteine": {
+    "teil1": [{"id": "SB1_001", "type": "grammar"}],
+    "teil2": [{"id": "SB2_001", "type": "grammar"}],
+    "meinung": [{"id": "SBM_001", "type": "opinion"}]
+  },
+  "mundlich": {
+    "teil1": [{"id": "M1_001", "topic": "Selbstvorstellung", "time": 2}],
+    "teil2": [{"id": "M2_001", "topic": "Thema besprechen", "time": 2}],
+    "teil3": [{"id": "M3_001", "topic": "Dialog", "time": 2}]
+  }
+}
