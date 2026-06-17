@@ -55,39 +55,41 @@ Seit einigen Jahren geht die Zahl der Kündigungsschutzklagen kontinuierlich zur
 
 ## LESEN - TEIL 2: Einleitung und Unterweisungen verstehen (4 Fragen)
 
-### Text 1: Berichtsheft
+### Aufgabe 6-7: Betriebssport
 
-Das Berichtsheft ist der Nachweis, dass die Ausbildung ordnungsgemäß verläuft. In diesem wird alles dokumentiert, was man während der Ausbildung macht und lernt. Sie sollten nicht nur ihre Tätigkeiten im Betrieb beschreiben, sondern auch alle Einweisungen, Schulungen und den innerbetrieblichen Unterricht vermerken. Wie Sie sehen, ist das Führen der Ausbildungsnachweise ein wichtiger Inhalt Ihrer Ausbildung, bei dem Sie lernen, Ihre Tätigkeiten zeitlich und inhaltlich zu dokumentieren. Darüber hinaus bietet es Ihnen die Möglichkeit, den Zeitaufwand für bestimmte Tätigkeiten präziser einzuschätzen und Ihre Aufgaben zu reflektieren.
+Sportliche Aktivitäten werden bei uns großgeschrieben. So bieten wir unseren Mitarbeitern im Untergeschoss einen Fitnessraum mit Bodenmatten und mehreren Fitnessgeräten, wie z. B. zwei Indoor-Fahrradtrainern. Dieser ist für alle ganztägig frei und ohne Gebühr zugänglich und kann selbstverständlich auch in den Pausen genutzt werden.
 
-Weiterhin wird Ihr Tätigkeitsbereich für Beteiligte im Unternehmen und für die Stellen, die für die Berufsausbildung zuständig sind, nachvollziehbar dargestellt. Es ist Pflicht, das Berichtsheft jeweils vor der Zwischen- und der Abschlussprüfung vorzulegen. Nur wenn es vollständig ist, wird der Prüfungsausschuss Sie zu den Prüfungen zulassen. Wenn Sie zwischen zwei Noten stehen, können Ihre Berichte sogar Ihre Endnote beeinflussen.
+Außerdem nehmen wir als Unternehmen jedes Jahr am städtischen Firmenlauf teil. Es hat sich die Tradition entwickelt, dass sich die teilnehmenden Kolleginnen und Kollegen gemeinsam in einem wöchentlichen Lauftreff auf dieses Event vorbereiten. Dieser findet jeden Mittwoch um 17:30 Uhr statt.
 
-Neben den Wochenberichten, die Sie jeden Freitag an Ihren Teamleiter schicken, müssen Sie nach dem Durchlaufen einer Abteilung einen zusätzlichen Bericht verfassen. Dieser ergänzt den Wochenbericht und verschafft Ihnen einen genaueren Überblick über die Aufgaben in der jeweiligen Abteilung. Sie dürfen Ihre Berichte während der Arbeitszeit schreiben und können sie sowohl in klassischer Heftform als auch in digitaler Form auf unserer firmeninternen Plattform führen und einreichen. In festen Abständen haben Sie das Heft Ihrem Ausbildungsleiter zur Kenntnisnahme vorzulegen. In Ihrem eigenen Interesse empfehlen wir Ihnen, es immer zeitnah zu vervollständigen.
+Abwechslungsreich gestaltete Arbeitsplätze in den Büros tragen zur Steigerung der Aktivität auch während der Arbeit bei. Alle Schreibtische sind höhenverstellbar, sodass Arbeiten auch im Stehen möglich ist.
 
-**Frage 6: Auszubildende ohne ordentlich geführtes Berichtsheft dürfen nicht an der Abschlussprüfung teilnehmen.**
+**Frage 6: Der Fitnessraum ist während der Arbeitszeit geöffnet.**
 - **richtig / falsch?** ___
 
-**Frage 7: Das Berichtsheft muss**
-- a) in der Freizeit geführt werden.
-- b) dem Ausbildungsleiter regelmäßig gezeigt werden.
-- c) jeden Tag ausgefüllt werden.
+**Frage 7: Die Mitarbeiter**
+- (a) erhalten einen Zuschuss für ein Deskbike
+- (b) haben teilweise spezielle Schreibtische in Stehhöhe
+- (c) können das hausinterne Fitnessstudio gratis nutzen
 
 **Antwort:** ___
 
-### Text 2: Willkommensmappe
+---
 
-[Similar text about employee onboarding and policies]
+### Aufgabe 8-9: Zugangskontolle und Zeiterfassung
 
-**Frage 8: Die Mitarbeiter können**
-- a) bei Bedarf von zu Hause aus arbeiten.
-- b) sich maximal ein halbes Jahr beurlauben lassen.
-- c) Geldleistungen für die Pflege von Angehörigen erhalten.
+Als Mitarbeiterinnen und Mitarbeiter erhalten Sie zu Beginn Ihres Arbeitsverhältnisses einen Firmenausweis mit Chip-Karte. Dieser berechtigt zum Zugang in das Unternehmensgebäude und dient gleichzeitig zur Erfassung der Arbeitszeit. Außerdem können Sie mit Ihrem Firmenausweis in der Kantine und am Getränkeautomaten bezahlen und das hauseigene Fitnessstudio benutzen.
 
-**Antwort:** ___
+Neben den Aufzügen im Erdgeschoss finden Sie ein digitales Zeiterfassungsgerät. Bitte halten Sie beim Betreten und Verlassen des Gebäudes Ihren Firmenausweis an die blau markierte Fläche und vergewissern Sie sich, dass die Zeit des Arbeitsbeginns und Arbeitsendes richtig erfasst wurde.
 
-**Frage 9: Die Krankmeldungen müssen**
-- a) persönlich beim Chef gemacht werden.
-- b) vorübergehend an JM gesendet werden.
-- c) spätestens nach 3 Tagen bestätigt werden.
+Die Zeiterfassung berechnet automatisch die reguläre Arbeitszeit sowie eventuelle Über- als auch Minusstunden. Die Personalabteilung richtet Ihnen einen Zugang zu unserem Arbeitskonto System PersoTime ein.
+
+**Frage 8: Der Firmenausweis hat neben der Arbeitszeiterfassung auch andere Funktionen.**
+- **richtig / falsch?** ___
+
+**Frage 9: Überstunden**
+- (a) können online eingesehen werden
+- (b) sind in der Firma grundsätzlich nicht erlaubt
+- (c) werden von der Zeiterfassung nicht registriert
 
 **Antwort:** ___
 
@@ -99,48 +101,62 @@ Neben den Wochenberichten, die Sie jeden Freitag an Ihren Teamleiter schicken, m
 
 Lesen Sie die Fragen (10-13) und wählen Sie die beste Antwort (a-f) aus dem Forum.
 
-**Frage 10: Gabi - Ich hatte gerade Urlaub und gleich am ersten Urlaubstag wurde meine Kleine krank und ich musste sie vier Tage lang pflegen. Wenn ich im Urlaub krank werde, kann ich die Tage zurückbekommen. Aber wie ist das, wenn das Kind krank wird?**
+---
+
+**Frage 10: Thia**  
+Voll gemein, ich habe nur 25 Urlaubstage! Mein Freund hat hingegen 30 Tage im Jahr. Ich frage mich, ob mir nicht auch mehr Tage zustehen. Kennt sich von euch da jemand aus?
 
 **Welche Antwort passt am besten?** ___
 
-**Frage 11: Charlotte - Ich konnte leider mal wieder nicht zur Arbeit gehen, weil mein Kind krank war. Als ich heute angerufen habe, hat mein Chef total überreagiert und mir mit Kündigung gedroht, wenn ich mehr als einen Tag fehle. Das geht doch nicht, oder?**
+---
+
+**Frage 11: Marilena**  
+Ich arbeite im Einzelhandel und bei uns gilt jede Woche ein anderer Dienstplan. Wir bekommen den Plan immer erst am Ende der Vorwoche und deshalb können wir unsere Freizeit natürlich auch nicht richtig planen. Ist das erlaubt?
 
 **Welche Antwort passt am besten?** ___
 
-**Frage 12: Lars - Ich bin letzten Montag mit furchtbaren Kopfschmerzen aufgewacht und konnte nicht aufstehen. Leider habe ich vergessen, meinen Arbeitgeber anzurufen, und bin im Bett geblieben. Jetzt will mein Chef mir kündigen, weil ich unentschuldigt gefehlt habe. Geht das so einfach?**
+---
+
+**Frage 12: Hans**  
+Ich habe nach der Genehmigung meines Urlaubs diesen gebucht und jetzt hat mein Chef gemerkt, dass ein anderer Kollege schon vorher zur selben Zeit Urlaub eingereicht hat. Jetzt will er mir meinen wieder streichen. Darf er das?
 
 **Welche Antwort passt am besten?** ___
 
-**Frage 13: Kamil - Gestern war ich krank. Als ich heute wieder im Büro war, wollte mein Chef direkt die Krankschreibung haben. Ich war immer der Meinung, die braucht man erst nach drei Tagen?**
+---
+
+**Frage 13: Lisa**  
+Ich mache zurzeit ein Pflichtpraktikum in einem Unternehmen und arbeite von Montag bis Freitag acht Stunden täglich. Jetzt soll ich nächsten Samstag auch noch kommen. Bin ich dazu verpflichtet? Ich fühle mich ein bisschen ausgenutzt!
 
 **Welche Antwort passt am besten?** ___
+
+---
 
 **Forum-Antworten:**
 
-a) **Günther** - Das kann man pauschal gar nicht so sagen. Wie das in deinem Unternehmen geregelt ist, steht in deinem Arbeitsvertrag. Ab wann du eine Arbeitsunfähigkeitsbescheinigung brauchst, findest du meistens unter den Paragraphen "Arbeitsverhinderung" oder "Krankheit".
+**a) Cécile** - Leider muss ich dich enttäuschen. Die Regelung ist gesetzeskonform. Das Minimum liegt sogar nur bei 20 Tagen. Sei froh, dass du mehr hast. Bei manchen Arbeitgebern erhöht sich der Urlaubsanspruch mit längerer Firmenzugehörigkeit.
 
-b) **Marion** - Nein, vorher musst du erst mal eine Abmahnung bekommen. Wenn du dann allerdings noch mal fehlst, ohne Bescheid zu sagen, musst du mit der Kündigung rechnen. Such doch noch mal das Gespräch mit deinem Chef. Ihr findet bestimmt eine Lösung.
+**b) Limit** - Meines Wissens gibt es keine gesetzliche Regelung dafür, aber sprich doch einfach mal mit eurem Chef. Dem ist vielleicht gar nicht klar, dass du das nicht so toll findest, wenn du immer erst so kurz vorher weißt, an welchen Tagen du arbeiten musst und wann du frei hast.
 
-c) **Karin** - Du kannst nicht einfach kommen und gehen, wann du willst, auch wenn du die Absicht hattest, die versäumte Zeit nachzuholen. Die Arbeitszeiten sind ja vertraglich geregelt. Wenn sich Mitarbeiter nicht daran halten, ist eine Abmahnung vor der Kündigung nicht notwendig.
+**c) Susanne** - Urlaub muss immer rechtzeitig beantragt werden, aber der Arbeitgeber ist nicht unbedingt verpflichtet, ihn zu gewähren. Wann Urlaub genommen werden darf, entscheidet der Chef. Aufgrund dringender betrieblicher Gründe kann ein Urlaubsantrag auch abgelehnt werden.
 
-d) **Elli** - Wie du selbst schreibst, können im Krankheitsfall die Urlaubstage auf dein Urlaubskonto zurückgebucht werden. Du brauchst natürlich ab den ersten Tag ein ärztliches Attest. Anders sieht es aus, wenn du einen Familienangehörigen betreust. Das ist dann nicht Sache deines Arbeitgebers.
+**d) Nico** - Schau doch mal in deinen Arbeitsvertrag. Da ist das sicher geregelt. Soviel ich weiß, gibt es da keine gesetzlichen Einschränkungen für angestellte Arbeitnehmer. Allerdings darfst du keine sieben Tage am Stück arbeiten. Der Samstag gilt in Deutschland als normaler Wochentag.
 
-e) **Sabine** - Diese Situation kennen doch alle Eltern. Wenn ich für meinen Sohn mal keine Betreuung finde, kann ich ihn auch ausnahmsweise mit ins Büro nehmen. Meine Chefin ist da zum Glück sehr verständnisvoll.
+**e) Greta** - Ich arbeite auch im Einzelhandel und bei uns ist es so geregelt, dass man einen festen Wochentag freibekommt, wenn man immer samstags arbeitet. Das kommt mir entgegen. So kann ich entspannt unter der Woche einkaufen oder ins Schwimmbad gehen.
 
-f) **Jorge** - Also ich gehe immer gleich am ersten Krankheitstag zum Arzt. Sicher ist sicher. Außerdem kann es nicht schaden, wenn dich ein Doktor anschaut, wenn du dich nicht wohlfühlst. Gerade wenn du Kinder hast, ist es wichtig, dass du weißt, was dir fehlt. Du willst ja niemanden anstecken.
+**f) Michele** - Das kann dein Chef nicht einfach so machen. Personelle Engpässe reichen für den Widerruf eines Urlaubsantrags nicht aus. Wenn du deinen Urlaub tatsächlich nicht antrittst, muss der Arbeitgeber alle Kosten tragen, die dir durch die Urlaubsverschiebung entstehen.
 
 ---
 
 ## LESEN - TEIL 4: Aufgaben und Aufgabenverteilung nachvollziehen (4 Fragen)
 
-### Protokoll Teambesprechung
+### Protokoll der Teambesprechung
 
-**Protokoll 14. Juni 20XX, 10:00-11:30 Uhr**  
+**Protokoll: 14. Juni 20XX, 10:00-11:30 Uhr**  
 **Sitzungsraum: 256, Ort: Geschäftsstelle**
 
 **Anwesende:** Michael Fischer (MF, Teamleitung), Hermes Wagner (HW), Ursula Frank (UF), Larkin Wagner (LW), Carla Krupp (CK), Ludmila Wagner (LW)
 
-**Tagesordnung:**
+**Tagesordnungspunkte:**
 1. Begrüßung und Genehmigung des Protokolls der letzten Sitzung
 2. Urlaubsplanung
 3. Neue Mitarbeiter
@@ -148,29 +164,53 @@ f) **Jorge** - Also ich gehe immer gleich am ersten Krankheitstag zum Arzt. Sich
 5. Vorbereitung der Messe
 6. Neujahrsfeier
 
+---
+
 **TOP 1: Begrüßung und Genehmigung des Protokolls**
+
 MF begrüßt alle Anwesenden zur Teambesprechung. Das Protokoll der letzten Sitzung wird ohne Einwände genehmigt.
 
+---
+
 **TOP 2: Urlaubsplanung**
-Die Kundenbetreuung ist aktuell unterbesetzt, weil viele Kollegen krank sind. Urlaubsanträge können im Moment nur in Ausnahmefällen genehmigt werden. Aufgrund des hohen Krankenstands mussten einige Kollegen in den letzten Monaten besonders viele Überstunden machen, die möglichst bis zum Ende des Kalenderjahres abgebaut werden sollten.
+
+Die Kundenbetreuung ist aktuell unterbesetzt, weil viele Kollegen krank sind. Auch in der Personalabteilung herrscht hoher Krankenstand. Krankmeldungen aus allen Abteilungen sollen deshalb vorübergehend direkt an JM gesendet werden.
+
+Urlaubsanträge können im Moment nur in Ausnahmefällen genehmigt werden. Aufgrund des hohen Krankenstands mussten einige Kollegen in den letzten Monaten besonders viele Überstunden machen, die möglichst bis zum Ende des Kalenderjahres abgebaut werden sollten. Sollte dies aufgrund des hohen Arbeitspensums nicht möglich sein, können die Überstunden auch in das nächste Jahr übertragen werden.
+
+---
 
 **TOP 3: Neue Mitarbeiter**
+
 Zum 1. Dezember beginnen drei neue Mitarbeiter in der Produktion, da die Verkaufszahlen stark gestiegen sind.
 
+---
+
 **TOP 4: Kundenbindung und Rabattaktion**
-KM hat erfahren, dass der Wettbewerber Lutz GmbH für das Frühjahr eine Rabattaktion plant. RL schlägt vor, ebenfalls eine Kampagne zur Kundenbindung zu entwickeln. KM hat hierför bereits einen ersten Entwurf für ein Konzept ausgearbeitet und legt diesen vor. Er schlägt vor, das Konzeption einer kleineren Runde zu diskutieren.
+
+KM hat erfahren, dass der Wettbewerber Lutz GmbH für das Frühjahr eine Rabattaktion plant. RL schlägt vor, ebenfalls eine Kampagne zur Kundenbindung zu entwickeln. KM hat hierfür bereits einen ersten Entwurf für ein Konzept ausgearbeitet und legt diesen vor. Er schlägt vor, das Konzept einer kleineren Runde zu diskutieren.
+
+---
 
 **TOP 5: Vorbereitung der Messe**
-Im nächsten Jahr wird unsere Firma erstmals an der Frühjahhrsmesse in Dresden teilnehmen. MB aus der Marketingabteilung berichtet, dass bereits der Standplatz gebucht und der Messebauer beauftragt ist. Die Broschüren zu unserem Messeauftritt sind bereits im Druck und können in der 2. KW an unsere Kunden verschickt werden.
+
+Im nächsten Jahr wird unsere Firma erstmals an der Frühjahhrsmesse in Dresden teilnehmen, die vom 20.-24. April stattfindet. MB aus der Marketingabteilung berichtet, dass bereits der Standplatz gebucht und der Messebauer beauftragt ist.
+
+Interessierte können sich die Standgestaltung im Büro von MB ansehen. Auch die Broschüren zu unserem Messeauftritt sind bereits im Druck und können in der 2. KW an unsere Kunden verschickt werden. Abschließend bittet MB JM, externes Standpersonal und Hotelzimmer für die Mitarbeiter zu buchen, die auf die Messe gehen.
+
+---
 
 **TOP 6: Neujahrsfeier**
-JM berichtet, dass am 7. Januar die Neujahrsfeier stattfindet. Alle Mitarbeiter sollen bis zum 15. Dezember Bescheid sagen, mit wie vielen Personen sie teilnehmen und was sie essen möchten.
+
+JM berichtet, dass am 7. Januar die Neujahrsfeier im Restaurant „Zum Schwan" stattfindet. Die Einladungen und Menüvorschläge werden verschickt. Alle Mitarbeiter sollen bis zum 15. Dezember Bescheid sagen, mit wie vielen Personen sie teilnehmen und was sie essen möchten. Die Geschäftsführung hat auch eine kleine Überraschung für die Mitarbeiter an diesem Abend geplant.
+
+---
 
 **Fragen zum Protokoll:**
 
 **Frage 14: Bei der Sitzung wird**
 - a) das Protokoll der letzten Besprechung geändert.
-- b) die Tagesordnung genehmigt
+- b) die Tagesordnung genehmigt.
 - c) über Personalthemen gesprochen.
 
 **Antwort:** ___
@@ -178,7 +218,7 @@ JM berichtet, dass am 7. Januar die Neujahrsfeier stattfindet. Alle Mitarbeiter 
 **Frage 15: Einige Mitarbeiter machen Überstunden,**
 - a) da andere Urlaub machen.
 - b) obwohl sie krank sind.
-- c) weil die Arbeit nicht komplett erledigt wird.
+- c) weil Arbeitszeiten nicht eingen werden.
 
 **Antwort:** ___
 
@@ -200,30 +240,33 @@ JM berichtet, dass am 7. Januar die Neujahrsfeier stattfindet. Alle Mitarbeiter 
 
 ## ANSWER KEY
 
-### Teil 1:
-1. h
-2. c
-3. b
-4. g
-5. e
+### Teil 1 (Matching - Job Articles):
+1. h (Zahl der Klagen rückläufig)
+2. c (Job mit guten Zukunftsaussichten)
+3. b (Innovativer Klimaschutz)
+4. g (Warum nicht mal ganz weit weg?)
+5. e (Umgangsformen im Berufsalltag)
 
-### Teil 2:
-6. richtig
-7. b
-8. a
-9. b
+### Teil 2 (Comprehension - True/False & Multiple Choice):
+**Aufgabe 6-7 (Betriebssport):**
+- Frage 6: **richtig** (Der Fitnessraum ist ganztägig frei und zugänglich)
+- Frage 7: **c** (können das hausinterne Fitnessstudio gratis nutzen)
 
-### Teil 3:
-10. d
-11. b
-12. a
-13. a
+**Aufgabe 8-9 (Zugangskontolle und Zeiterfassung):**
+- Frage 8: **richtig** (Der Firmenausweis dient auch zum Bezahlen in der Kantine und am Getränkeautomaten)
+- Frage 9: **a** (können online eingesehen werden - über PersoTime System)
 
-### Teil 4:
-14. c
-15. b
-16. c
-17. c
+### Teil 3 (Forum - Question Matching):
+- Frage 10 (Urlaubstage): **a** (Cécile - Das Minimum liegt bei 20 Tagen)
+- Frage 11 (Dienstplan): **b** (Limit - Keine gesetzliche Regelung, mit Chef sprechen)
+- Frage 12 (Urlaub streichen): **f** (Michele - Chef kann das nicht einfach machen)
+- Frage 13 (Samstag arbeiten): **d** (Nico - Der Samstag gilt als normaler Wochentag)
+
+### Teil 4 (Protocol - Multiple Choice):
+- Frage 14: **c** (über Personalthemen gesprochen - Krankenstand, Urlaub, neue Mitarbeiter)
+- Frage 15: **b** (obwohl sie krank sind - der Text erwähnt "hoher Krankenstand")
+- Frage 16: **c** (plant eine Rabattaktion im Frühjahr)
+- Frage 17: **c** (lässt gerade Broschüren drucken)
 
 ---
 
